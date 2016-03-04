@@ -1,0 +1,12 @@
+- {
+    hash: '#about',
+    title: 'About',
+}
+- {
+    hash: '#contacts',
+    title: 'contacts',
+}
+- {
+    hash: '#home',
+    title: 'home',
+}
