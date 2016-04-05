@@ -1,0 +1,22 @@
+// Variables
+@import '-vars';
+
+// Vendor
+@import '../node_modules/coriolan-ui/coriolan-ui';
+@import 'vendor/slick/slick';
+@import 'vendor/slick/slick-theme';
+@import 'vendor/icomoon';
+@import 'vendor/sprite';
+
+// UX/UI
+@import 'base';
+@import 'main-nav';
+@import 'hero';
+@import 'banner-games';
+@import 'game-promo';
+@import 'game-categories';
+@import 'game-list';
+@import 'winners';
+@import 'payment';
+@import 'footer';
+@import 'afterfooter';

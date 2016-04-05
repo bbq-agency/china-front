@@ -1,6 +1,10 @@
-# Cashbox
+# China Front
 
-Front-end development of Cashboxes
+Front-end development of a Chineese casino site 
+
+Production: _coming soon_
+
+Stage: _coming soon_
 
 ## System Preparation
 
@@ -14,5 +18,5 @@ To use this project, you'll need the following things installed on your machine:
 
 1. Clone this repo
 2. Inside the directory install packages: `npm i`
-3. And then run `npm start` or `gulp`
+3. And then run gulp `gulp`
 4. Have Fun :)

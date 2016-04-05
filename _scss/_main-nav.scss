@@ -1,0 +1,313 @@
+$desktop-min-width: 1054px;
+
+.header {
+    text-align: center;
+    position: relative;
+
+    @include clearfix;
+
+    &__social {
+        display: inline-block;
+        &-title {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 12px;
+            text-transform: uppercase;
+            margin: 0 4px;
+        }
+        &-item {
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            vertical-align: middle;
+            background: #31A1E5;
+            margin: 0 2px;
+        }
+    }
+
+    &-separate-line {
+        height: 1px;
+        background: #FFF;
+        position: absolute;
+        opacity: 0.5;
+        top: 50px;
+        left: 15px;
+        right: 15px;
+    }
+}
+
+.main-nav {
+    float: left;
+    &__item {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 50px;
+        .icon {
+            font-size: 14px;
+            display: inline-block;
+            vertical-align: middle;
+            color: #FFF;
+        }
+    }
+
+    &__link {
+        display: block;
+        text-decoration: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        &:hover {
+            background: #404040;
+            cursor: pointer;
+        }
+    }
+
+    &__text {
+        margin-left: 6px;
+        display: inline-block;
+        vertical-align: middle;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+}
+
+.logo {
+    display: inline-block;
+    width: 129px;
+    float: none;
+    margin-top: 5px;
+    margin-left: -80px;
+    position: relative;
+    top: -4px;
+
+    @media all and(min-width: $desktop-min-width) {
+        margin: 5px auto;
+    }
+
+    &__img {
+        display: block;
+        max-width: 100%;
+    }
+}
+
+.auth {
+    clear: both;
+    text-align: center;
+    line-height: 50px;
+    padding-right: 10px;
+
+    @media all and(min-width: $desktop-min-width) {
+        clear: none;
+        display: inline-block;
+        float: right;
+    }
+
+    .btn {
+        display: inline-block;
+        vertical-align: middle;
+        font-weight: 100;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
+
+.dropdown-select {
+    position: relative;
+    display: inline-block;
+    &__toggle {
+        display: inline-block;
+        text-decoration: none;
+        padding-right: 10px;
+        position: relative;
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:focus {
+            background: #000;
+            outline: none;
+            & ~ .dropdown-select__list {
+                display: block;
+            }
+
+        }
+
+        &-social {
+            padding: 0;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            vertical-align: middle;
+            background: none;
+            line-height: 28px;
+            text-align: center;
+            border: 1px solid #666666;
+            z-index: 1;
+        }
+    }
+
+    &__item {
+        line-height: 40px;
+        text-align: left;
+    }
+
+    &__state {
+        color: #FFF;
+        font-size: 6px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__lang {
+        display: inline-block;
+        float: right;
+        line-height: 50px;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @media all and (min-width: $desktop-min-width) {
+            position: relative;
+            float: none;
+        }
+    }
+
+    &__list {
+        position: absolute;
+        width: 170px;
+        background-color: #4D4D4D;
+        right: 0;
+        display: none;
+        z-index: 2;
+        padding: 10px 0;
+        border-radius: 4px;
+        margin-top: 10px;
+    }
+
+    &__triangle {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 5px 5px 5px;
+        border-color: transparent transparent #4D4D4D transparent;
+        position: absolute;
+        right: 10px;
+        top: -5px;
+    }
+
+    &__link {
+        display: block;
+        text-decoration: none;
+        &:hover {
+            background: #333333;
+        }
+        &--active {
+            background: #BA0000
+        }
+    }
+    &__state {
+        .icon-arrow-down {
+            font-size: 6px;
+            color: #FFF;
+        }
+    }
+
+    &__selected-text {
+        text-align: right;
+        display: block;
+        @media all and (min-width: $desktop-min-width) {
+            display: none;
+        }
+    }
+
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 30px;
+    border-radius: 100px;
+    padding: 0 15px;
+    color: #FFF;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0 4px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &--base {
+        border: 1px solid #666666;
+        font-size: 12px;
+        text-transform: uppercase;
+        &:hover {
+            background: #666666;
+        }
+        &:active {
+            background: #4D4D4D;
+        }
+    }
+    &--accent {
+        background: #CA1E10;
+        box-shadow: 0 0 10px #FE0000;
+        &:hover {
+            background: #CA1E10;
+            box-shadow: none;
+        }
+        &:active {
+            background: #AF1509;
+        }
+    }
+}
+
+.flag-holder {
+    width: 30px;
+    height: 30px;
+    margin: 0 12px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 30px;
+    color: #D8D8D8;
+    overflow: hidden;
+    background-color: #D8D8D8;
+
+    &__selected {
+        background: none;
+    }
+
+    &-img {
+        display: block;
+        max-width: 100%;
+
+        &__selected {
+            display: none;
+            @media all and (min-width: $desktop-min-width) {
+                display: block;
+            }
+        }
+    }
+}
+
+// helpers
+
+.visible-ib-desktop {
+    display: none;
+    @media all and (min-width: $desktop-min-width) {
+        display: inline-block;
+    }
+}
+
+// todo: remove
+
+main {
+    padding: 0;
+}
+
+/*html {
+    width: 320px;
+}*/
