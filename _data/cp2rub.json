@@ -1,0 +1,56 @@
+[
+    {
+        "id": "exchange2-01",
+        "number1": "100",
+        "currency1": "баллов",
+        "number2": "10",
+        "currency2": "руб",
+        "checked": true
+    },
+    {
+        "id": "exchange2-02",
+        "number1": "800",
+        "currency1": "баллов",
+        "number2": "100",
+        "currency2": "руб",
+        "number3": "1000",
+        "currency3": "баллов"
+    },
+    {
+        "id": "exchange2-03",
+        "number1": "3000",
+        "currency1": "баллов",
+        "number2": "500",
+        "currency2": "руб",
+        "number3": "5000",
+        "currency3": "баллов"
+    },
+    {
+        "id": "exchange2-04",
+        "number1": "8000",
+        "currency1": "баллов",
+        "number2": "2000",
+        "currency2": "руб",
+        "number3": "10000",
+        "currency3": "баллов",
+    },
+    {
+        "id": "exchange2-05",
+        "number1": "12000",
+        "currency1": "баллов",
+        "number2": "8000",
+        "currency2": "руб",
+        "number3": "15000",
+        "currency3": "баллов",
+    },
+    {
+        "id": "exchange2-06",
+        "number1": "30000",
+        "currency1": "баллов",
+        "number2": "15000",
+        "currency2": "руб",
+        "number3": "40000",
+        "currency3": "баллов",
+        "profitable": true
+    }
+]

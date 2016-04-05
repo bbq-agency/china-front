@@ -1,0 +1,116 @@
+// Buttons
+button {
+    border: 0;
+    background: none;
+    padding: 0;
+    outline: 0;
+}
+
+.btn {
+    outline: 0;
+    border: 0;
+    display: inline-block;
+    border-radius: 2px;
+    text-transform: uppercase;
+    line-height: 20px;
+    padding: 8px 16px;
+    font-weight: 600;
+    font-style: italic;
+
+    [class^="icon-"] {
+        font-size: 18px;
+        line-height: 20px;
+        position: relative;
+        top: 2px;
+        display: inline-block;
+        transition: transform .1s ease-in-out;
+    }
+
+    &--success {
+        color: #fff;
+        background: #fef035;
+        background: linear-gradient(to bottom, #fef035 0%,#dc4401 100%);
+        box-shadow: 
+            0px 3px 0px 0px rgba(95,32,0,0.9),
+            0px 1px 1px 0px rgba(220,68,1,0.57),
+            inset 0px 7px 34px 0px rgba(252,239,49,0.8);
+        text-shadow: 0px 1px 4px #8C3200;
+        position: relative;
+        border-top: 1px solid #fffb02;
+        border-bottom: 1px solid #ffad01;
+
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            background-image: linear-gradient(#fffb02, #ffad01);
+            top: 0;
+            bottom: 0;
+            width: 1px;
+        }
+
+        &:before {
+            left: 0;
+        }
+
+        &:after {
+            right: 0;
+        }
+
+        &:hover {
+            background: linear-gradient(to bottom, #fef035 0%,#D46C3E 100%);
+        }
+    }
+
+    &--link {
+        font-style: normal;
+        text-transform: none;
+        text-shadow: 1px 1px 0px #000000;
+        color: #01cbf9;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &--ghost {
+        color: #0C4A76;
+        border: 1px solid rgba(#000, .3);
+    }
+
+    &--sm {
+        color: #fff;
+        background: #fef035;
+        background: linear-gradient(to bottom, #bfe4ed 0%,#1a8096 100%);
+        box-shadow: 
+            0px 3px 0px 0px #343434,
+            0px 1px 1px 0px rgba(220,68,1,0.57),
+            inset 0px 7px 34px 0px rgba(207,237,242,0.8);
+        text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.88);
+        position: relative;
+        border-top: 1px solid #d4ecee;
+        border-bottom: 1px solid #4ea8c0;
+
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            background-image: linear-gradient(#d4ecee, #4ea8c0);
+            top: 0;
+            bottom: 0;
+            width: 1px;
+        }
+
+        &:before {
+            left: 0;
+        }
+
+        &:after {
+            right: 0;
+        }
+
+        &:hover {
+            background: linear-gradient(to bottom, #cfedf6 0%,#23a4c1 100%);
+        }
+    }
+}

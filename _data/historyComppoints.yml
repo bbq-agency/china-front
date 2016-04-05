@@ -1,0 +1,100 @@
+- {
+    time: '04:09',
+    date: '09.11.2015',
+    bill: '47**234 VIZA',
+    amount: '1000.00',
+    currency: 'руб',
+    statusSuccess: true,
+    # statusWaiting: true,
+    # statusCanceled: false,
+}
+- {
+    time: '04:09',
+    date: '09.11.2015',
+    bill: '47**234 VIZA',
+    amount: '1000.00',
+    currency: 'руб',
+    # statusSuccess: false,
+    statusWaiting: true,
+    # statusCanceled: false,
+}
+- {
+    time: '04:09',
+    date: '09.11.2015',
+    bill: '47**234 VIZA',
+    amount: '1000.00',
+    currency: 'руб',
+    statusSuccess: true,
+    # statusWaiting: true,
+    # statusCanceled: false,
+}
+- {
+    time: '04:09',
+    date: '09.11.2015',
+    bill: '47**234 VIZA',
+    amount: '1000.00',
+    currency: 'руб',
+    # statusSuccess: true,
+    # statusWaiting: true,
+    statusCanceled: true,
+}
+- {
+    time: '04:09',
+    date: '09.11.2015',
+    bill: '47**234 VIZA',
+    amount: '1000.00',
+    currency: 'руб',
+    statusSuccess: true,
+    # statusWaiting: true,
+    # statusCanceled: false,
+}
+- {
+    time: '04:09',
+    date: '09.11.2015',
+    bill: '47**234 VIZA',
+    amount: '1000.00',
+    currency: 'руб',
+    statusSuccess: true,
+    # statusWaiting: true,
+    # statusCanceled: false,
+}
+- {
+    time: '04:09',
+    date: '09.11.2015',
+    bill: '47**234 VIZA',
+    amount: '1000.00',
+    currency: 'руб',
+    statusSuccess: true,
+    # statusWaiting: true,
+    # statusCanceled: false,
+}
+- {
+    time: '04:09',
+    date: '09.11.2015',
+    bill: '47**234 VIZA',
+    amount: '1000.00',
+    currency: 'руб',
+    statusSuccess: true,
+    # statusWaiting: true,
+    # statusCanceled: false,
+}
+- {
+    time: '04:09',
+    date: '09.11.2015',
+    bill: '47**234 VIZA',
+    amount: '1000.00',
+    currency: 'руб',
+    statusSuccess: true,
+    # statusWaiting: true,
+    # statusCanceled: false,
+}
+- {
+    time: '04:09',
+    date: '09.11.2015',
+    bill: '47**234 VIZA',
+    amount: '1000.00',
+    currency: 'руб',
+    statusSuccess: true,
+    # statusWaiting: true,
+    # statusCanceled: false,
+}

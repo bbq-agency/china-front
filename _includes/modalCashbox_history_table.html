@@ -1,0 +1,38 @@
+<tr>
+    <td>
+        <span class="trans-history__time">{{ item.time }}</span>
+        <span class="trans-history__date">{{ item.date }}</span>
+    </td>
+    <td><span class="trans-history__bill">{{ item.bill }}</span></td> 
+    <td>
+        <span class="trans-history__amount">{{ item.amount }}</span>
+        <span class="trans-history__currency">{{ item.currency }}</span>
+    </td>
+
+    {% if item.statusSuccess == true %}
+    <td>
+        <span>&nbsp;</span>
+    </td>
+    <td>
+        <span class="trans-history__status trans-history__status--success"><span class="icon-check"></span> Успешная</span>
+    </td>
+    {% endif %}
+
+    {% if item.statusWaiting == true %}
+    <td>
+        <span class="trans-history__status trans-history__status--waiting"><span class="icon-hourglass"></span> В ожидании</span>
+    </td>
+    <td>
+        <a href="javascript:void(0)" class="btn btn--ghost btn--sm">Отменить</a>
+    </td>
+    {% endif %}
+
+    {% if item.statusCanceled == true %}
+    <td>
+        <div class="trans-history__status trans-history__status--canceled"><span class="icon-error"></span> Отказано</div>
+    </td>
+    <td>
+        <a href="javascript:void(0)" class="btn btn--ghost btn--sm">Отменить</a>
+    </td>
+    {% endif %}
+</tr>

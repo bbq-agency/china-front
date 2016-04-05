@@ -1,2 +1,5 @@
 baseurl: /lending-test
-port: 7002
+exclude: ['README.md', 'node_modules', 'gulpfile.js', 'package.json']
+
+# authorized
+authorized: false

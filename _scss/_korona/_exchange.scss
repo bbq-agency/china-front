@@ -1,0 +1,206 @@
+.exchange {
+    text-align: left;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    position: relative;
+
+    &--disabled {
+        opacity: .5;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -8px;
+            width: 100%;
+            bottom: 0;
+            background: rgba(#000, 0);
+            z-index: 20;
+        }
+    }
+
+    &__label {
+        width: 100%;
+        height: 72px;
+        background: #16406a;
+        cursor: pointer;
+        border-radius: 4px;
+        box-sizing: border-box;
+        position: relative;
+        display: table;
+        border: 1px solid #448bcd;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            width: 100%;
+            height: 100%;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            transition: border-color .2s ease-in-out;
+        }
+
+        .icon-radio-checked,
+        .icon-radio-unchecked {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            color: rgba(#000, .2);
+            font-size: 20px;
+            margin-top: -10px;
+            transition: opacity .2s ease-in-out;
+        }
+
+        .icon-radio-checked {
+            opacity: 0;
+        }
+
+        .icon-radio-unchecked {
+            opacity: 1;
+        }
+
+        &:hover {
+            &:before {
+                // border-color: rgba(#000, .1);
+                border-color: #00cafc !important;
+            }
+
+            .icon-radio-checked {
+                opacity: 1;
+            }
+
+            .icon-radio-unchecked {
+                opacity: 0;
+            }
+        }
+
+        // &.exchange__label--selected {
+        //     &:before {
+        //         border-color: #249e49;
+        //     }
+
+        //     .icon-radio-checked {
+        //         opacity: 1;
+        //         color: #205A89;
+        //     }
+
+        //     .icon-radio-unchecked {
+        //         opacity: 0;
+        //     }
+        // }
+    }
+
+    &__input-radio[type="radio"] {
+        display: none;
+
+        &:checked + .exchange__label {
+            &:before {
+                // border-color: #249e49;
+                border-color: transparent;
+            }
+
+            .icon-radio-checked {
+                opacity: 1;
+                color: #5be0ff;
+            }
+
+            .icon-radio-unchecked {
+                opacity: 0;
+            }
+        }
+    }
+
+    &__left,
+    &__right {
+        width: 50%;
+        display: table-cell;
+        vertical-align: middle;
+        position: relative;
+        z-index: 10;
+        padding: 0 40px;
+    }
+
+    &__left {
+        border-radius: 4px 0 0 4px;
+        padding-left: 40px;
+        background: #fff;
+        background: #16406a;
+
+        &--noradio {
+            padding-left: 16px;
+        }
+    }
+
+    &__right {
+        border-radius: 0 4px 4px 0;
+        position: relative;
+
+        &:after,
+        &:before {
+            content: '';
+            background: #1B5082;
+            margin-right: -1px;
+            position: absolute;
+            right: 100%;
+            width: 8px;
+            height: 70%;
+        }
+        &:before {
+            top: -11%;
+            transform: rotate(145deg);
+        }
+        &:after {
+            bottom: -11%;
+            transform: rotate(-145deg);
+        }
+    }
+
+    &__row-ellipsis {
+        @include ellipsis;
+    }
+
+    &__number {
+        font-size: 18px;
+        font-weight: 400;
+        color: #fff;
+    }
+
+    &__currency {
+        color: #8bb7e4;
+    }
+
+    &__subnumber {
+        color: #01cbf9;
+
+        &--line-through {
+            text-decoration: line-through;
+        }
+    }
+
+    &__subcurrency {
+        color: #8bb7e4;
+
+        &--line-through {
+            text-decoration: line-through;
+        }
+    }
+
+    &__input-text[type="number"] {
+        @extend .exchange__number;
+        border-radius: 4px;
+        border: 1px solid #1a507f;
+        // max-width: 160px;
+        box-shadow: inset 1px 1px 0 rgba(#000, .1);
+        line-height: 31px;
+        padding: 0 36px 0 8px;
+        background: #062d4c;
+
+        & + .exchange__currency {
+            position: absolute;
+            right: 54px;
+            bottom: 27px;
+        }
+    }
+}

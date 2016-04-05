@@ -1,0 +1,76 @@
+// Buttons
+button {
+    border: 0;
+    background: none;
+    padding: 0;
+    outline: 0;
+}
+
+.btn {
+    outline: 0;
+    border: 0;
+    display: inline-block;
+    border-radius: 3px;
+    text-transform: capitalize;
+    line-height: 20px;
+    padding: 8px 16px;
+    font-weight: 400;
+
+    [class^="icon-"] {
+        font-size: 18px;
+        line-height: 20px;
+        position: relative;
+        top: 2px;
+        display: inline-block;
+        transition: transform .1s ease-in-out;
+    }
+
+    &--success {
+        color: #fff;
+        background: #249E49;
+        background: linear-gradient(to bottom, 
+            #fa807f 0%,
+            #f36265 38%,
+            #e55151 100%);
+        box-shadow: 
+            0 2px 4px rgba(#000, .3),
+            0px 1px 0px 0px rgba(158,2,6,1),
+            inset 0px 0px 6px 0px rgba(255,255,255,0.6);
+        text-shadow: 1px 1px 0px #B71B1F;
+
+        &:hover {
+            background: linear-gradient(to bottom, 
+                #F19797 0%,
+                #f36265 78%,
+                #e55151 100%);
+        }
+    }
+
+    &--link {
+        color: #0073a9;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &--ghost {
+        color: #0C4A76;
+    }
+
+    &--sm {
+        color: #fff;
+        background: #2b8cd1;
+        background: linear-gradient(to bottom, 
+            #5eb4ed 0%,
+            #2b8cd1 100%);
+        box-shadow: 0px 3px 0px 0px rgba(0,100,166,1);
+        text-shadow: 1px 1px 0px #222;
+
+        &:hover {
+            background: linear-gradient(to bottom, 
+                #2b8cd1 0%,
+                #5eb4ed 100%);
+        }
+    }
+}

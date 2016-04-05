@@ -1,0 +1,128 @@
+.trans-history {
+    background: #1b5082;
+
+    &__header {
+        border-bottom: 1px solid #4a77b8;
+        border-radius: 0 0 4px 4px;
+        padding: 10px 0;
+    }
+
+    &__body {
+        // display: none;
+        margin: 5px;
+        margin-top: 0;
+    }
+
+    &__table {
+        background: #01345f;
+        border: 1px solid #000723;
+        border-radius: 0 0 4px 4px;
+        border-collapse: separate;
+        box-shadow: inset 0px 6px 5px 0px rgba(5,35,63,1);
+        box-shadow: inset 0px 4px 0px 0px rgba(7,34,63,1);
+        width: 100%;
+        color: #8cb8e5;
+
+        tr {
+            height: 66px;
+
+            &:last-child {
+                td {
+                    border-bottom: none;
+                }
+            }
+        }
+
+        td {
+            border-bottom: 1px solid #1b5082;
+            padding: 0 17px;
+        }
+    }
+
+    &__time {
+        display: block;
+        text-align: left;
+    }
+
+    &__date {
+        display: block;
+        text-align: left;
+    }
+
+    &__bill {
+
+    }
+
+    &__amount {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    &__currency {
+        font-size: 12px;
+    }
+
+    &__status {
+
+        &--success {
+            [class^="icon-"] {
+                color: #00f897;
+            }
+        }
+
+        &--waiting {
+            [class^="icon-"] {
+                color: #c2c3c8;
+            }
+        }
+
+        &--canceled {
+            [class^="icon-"] {
+                color: #fd001d;
+            }
+        }
+
+        [class^="icon-"] {
+            font-size: 22px;
+            text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.88);
+            position: relative;
+            top: 4px;
+        }
+    }
+
+    &__footer {
+        padding: 10px 0;
+    }
+
+    &__open {
+        position: relative;
+        
+        &:before,
+        &:after {
+            content: '';
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            margin: auto;
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+        }
+
+        &:after {
+            border-top: 15px solid #1B5082;
+            bottom: -25px;
+        }
+
+        &:before {
+            border-top: 15px solid #07223f;
+            bottom: -31px;
+        }
+
+        [class^="icon-"] {
+            transform: rotate(-180deg);
+        }
+    }
+}

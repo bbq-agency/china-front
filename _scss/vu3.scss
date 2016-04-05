@@ -1,0 +1,26 @@
+// Body
+$bodyBg: #ccc url(../img/bg/vu3.png) top center;
+$bodyFont: 400 14px/1.3 "Open Sans", Helvetica, Arial, sans-serif;
+
+// Grid
+$gridIndent: 8px;
+
+// Global Vendor
+@import '../node_modules/coriolan-ui/coriolan-ui';
+@import 'vendor/remodal/remodal-index';
+
+// Project Vendor
+@import '_vu3/vendor/remodal-vu3-theme';
+@import '_vu3/vendor/icomoon';
+
+// UI
+@import '_vu3/buttons';
+@import '_vu3/fields';
+@import '_vu3/gonfalon';
+@import '_vu3/modal';
+
+// Cashbox
+@import '_vu3/easytabs';
+@import '_vu3/singletab';
+@import '_vu3/exchange';
+@import '_vu3/trans-history';

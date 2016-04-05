@@ -1,0 +1,55 @@
+- {
+    id: 'exchange1-01',
+    number1: '250',
+    currency1: 'руб',
+    number2: '160000',
+    currency2: 'fun',
+    checked: true,
+}
+- {
+    id: 'exchange1-02',
+    number1: '500',
+    currency1: 'руб',
+    number2: '320000',
+    currency2: 'fun',
+    number3: '30000',
+    currency3: 'fun',
+    # popular: true
+}
+# - {
+#     id: 'exchange1-03',
+#     number1: '1000',
+#     currency1: 'руб',
+#     number2: '640000',
+#     currency2: 'fun',
+#     number3: '60000',
+#     currency3: 'fun'
+# }
+- {
+    id: 'exchange1-04',
+    number1: '5000',
+    currency1: 'руб',
+    number2: '1220000',
+    currency2: 'fun',
+    number3: '120000',
+    currency3: 'fun',
+    profitable: true
+}
+# - {
+#     id: 'exchange1-05',
+#     number1: '10000',
+#     currency1: 'руб',
+#     number2: '2540000',
+#     currency2: 'fun',
+#     number3: '120000',
+#     currency3: 'fun'
+# }
+# - {
+#     id: 'exchange1-06',
+#     number1: '20000',
+#     currency1: 'руб',
+#     number2: '2890000',
+#     currency2: 'fun',
+#     number3: '60000',
+#     currency3: 'fun'
+# }

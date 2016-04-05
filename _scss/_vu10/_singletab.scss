@@ -1,0 +1,42 @@
+.singletab {
+    &__form {
+        padding: 35px 20px;
+        text-align: left;
+        margin-bottom: 20px;
+        background-color: #051223;
+        background-image: repeating-radial-gradient(circle at 50% 50%, #061326 50%, rgba(0, 0, 0, 0.18) 55%);
+        background-size: 21px 12px;
+        border-radius: 10px;
+        border-left: 1px solid #072643;
+        border-right: 1px solid #072643;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #034671;
+
+        &:first-child {
+             border-radius: 0 0 10px 10px;
+        }
+    }
+
+    &__container {
+        max-width: 456px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    &__subtitle {
+        padding: 20px 0;
+    }
+
+    &__description {
+        margin-bottom: 55px;
+        text-align: center;
+        color: #0175a6;
+    }
+}

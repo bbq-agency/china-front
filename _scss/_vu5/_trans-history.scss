@@ -1,0 +1,98 @@
+.trans-history {
+    background: #06213c;
+
+    &__header {
+        background: #06213c;
+        box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.99);
+        padding: 10px 0;
+    }
+
+    &__body {
+        // display: none;
+    }
+
+    &__table {
+        width: 100%;
+        color: #666;
+
+        tr {
+            border-bottom-color: #133250;
+            border-bottom-style: groove;
+            border-bottom-width: 2px;
+            height: 70px;
+
+            &:first-child {
+                
+            }
+        }
+
+        td {
+            border-top: 1px solid #0c2947;
+            padding: 0 20px;
+        }
+    }
+
+    &__time {
+        color: #b5b8c9;
+        display: block;
+        text-align: left;
+        color: #9b9b9b;
+    }
+
+    &__date {
+        color: #7e8e9e;
+        display: block;
+        text-align: left;
+    }
+
+    &__bill {
+        color: #b5b8c9;
+    }
+
+    &__amount {
+        display: block;
+        color: #ffb31d;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    &__currency {
+        display: block;
+        color: #ffb31d;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-align: left;
+    }
+
+    &__status {
+
+        &--success {
+            color: #40cc37;
+        }
+
+        &--waiting {
+            color: #b5b8c9;
+        }
+
+        &--canceled {
+            color: #ce2714;
+        }
+
+        [class^="icon-"] {
+            font-size: 22px;
+            position: relative;
+            top: 4px;
+        }
+    }
+
+    &__footer {
+        padding: 10px 0;
+    }
+
+    &__open {
+
+        [class^="icon-"] {
+            transform: rotate(-180deg);
+        }
+    }
+}

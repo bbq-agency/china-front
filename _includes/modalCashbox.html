@@ -1,0 +1,45 @@
+<div data-remodal-id="cashbox" class="modal modal--cashbox js-remodal">
+    <button data-remodal-action="close" class="modal__close"><span class="icon-close"></span></button>
+
+    <div class="modal__header">
+        <span class="icon-wallet"></span> Касса
+    </div>
+
+    <div class="modal__body">
+
+        <div class="easytabs js-easytabs">
+
+            <ul class="easytabs__nav">
+                <li><a href="#refill">Пополнить</a></li>
+                <li><a href="#withdraw">Снять</a></li>
+                <li><a href="#fun">Fun</a></li>
+                <li><a href="#comppoints">Баллы</a></li>
+            </ul>
+
+            <div id="refill" class="singletab">
+                <div class="singletab__subtitle">Выберите способ оплаты и сумму пополнения</div>
+                <img src="{{ site.baseurl }}/assets/img/cashbox/{{ page.site-id }}-payment-method.png" alt="Payment Method">
+                {% include modalCashbox_historyRefill.html %}
+            </div>
+
+            <div id="withdraw" class="singletab">
+                <div class="singletab__subtitle">Выберите способ и сумму снятия</div>
+                <img src="{{ site.baseurl }}/assets/img/cashbox/{{ page.site-id }}-payment-method.png" alt="Payment Method">
+                {% include modalCashbox_historyWithdraw.html %}
+            </div>
+
+            <div id="fun" class="singletab">
+                {% include modalCashbox_rub2fun.html %}
+                {% include modalCashbox_cp2fun_1.html %}
+                {% include modalCashbox_historyFun.html %}
+            </div>
+
+            <div id="comppoints" class="singletab">
+                {% include modalCashbox_cp2rub.html %}
+                {% include modalCashbox_cp2fun_2.html %}
+                {% include modalCashbox_historyComppoints.html %}
+            </div>
+
+        </div>
+    </div>
+</div>
