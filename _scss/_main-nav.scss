@@ -1,0 +1,44 @@
+.main-nav {
+    float: left;
+
+    &__item {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 50px;
+
+        &.visible-ib-desktop {
+            display: none;
+
+            @media all and (min-width: $desktopMinWidth) {
+                display: inline-block;
+            }
+        }
+
+        .icon {
+            font-size: 14px;
+            display: inline-block;
+            vertical-align: middle;
+            color: #FFF;
+        }
+    }
+
+    &__link {
+        display: block;
+        text-decoration: none;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        &:hover {
+            background: #404040;
+            cursor: pointer;
+        }
+    }
+
+    &__text {
+        margin-left: 6px;
+        display: inline-block;
+        vertical-align: middle;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,41 @@
+// Variables
+@import '-vars';
+
+// Vendor
+@import '../node_modules/coriolan-ui/coriolan-ui';
+@import 'vendor/slick/slick';
+@import 'vendor/slick/slick-theme';
+@import 'vendor/remodal/remodal';
+@import 'vendor/remodal/remodal-default-theme';
+@import 'vendor/icomoon';
+@import 'vendor/sprite';
+
+// UI
+@import 'ui/ui-buttons';
+@import 'ui/ui-fields';
+
+// UX
+@import 'base';
+@import 'header';
+@import 'dropdown';
+@import 'flag-holder';
+@import "auth";
+@import 'main-nav';
+@import "buttons";
+@import 'hero';
+@import "features";
+@import 'banner-games';
+@import 'game-promo';
+@import 'game-categories';
+@import 'game-list';
+@import 'winners';
+@import 'payment';
+@import 'footer';
+@import 'afterfooter';
+@import 'popups/popups';
+@import 'popups/social-signin';
+@import 'popups/signin';
+@import 'popups/popup-question';
+@import 'popups/choose-currency';
+@import 'popups/choose-gift';
+

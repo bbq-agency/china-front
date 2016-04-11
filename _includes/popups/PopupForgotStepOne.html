@@ -1,0 +1,19 @@
+<div data-remodal-id="ForgotStepOne" class="popup js-popup">
+    <button data-remodal-action="close" class="popup__close"><span class="icon-close"></span></button>
+
+    <img class="popup__logo" src="{{ site.baseurl }}/assets/img/logo.png">
+    <div class="popup__title">Password Reset</div>
+
+    <div class="signin">
+        <div class="signin__title">Enter you email address or phone below and we will email you your account details</div>
+
+        <div class="signin__row">
+            <input class="signin__text" type="text" placeholder="Email or Phone">
+        </div>
+
+        <a href="javascript:void(0)" class="signin__btn-primary">Send Password</a>
+    </div>
+
+    {% include popups/_QuestionForgot.html %}
+
+</div>

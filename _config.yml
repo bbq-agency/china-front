@@ -1,4 +1,4 @@
-baseurl: /lending-test
+baseurl: '/lending-test'
 exclude: ['README.md', 'node_modules', 'gulpfile.js', 'package.json']
 
 # authorized

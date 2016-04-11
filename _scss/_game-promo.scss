@@ -1,0 +1,76 @@
+.game-promo {
+    text-align: center;
+    padding: 45px 0 65px;
+    background: linear-gradient(to top right, #460a0a, #131313);
+
+    &__title {
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 60px;
+        color: #f1f9c7;
+        text-shadow: 0 0 4px #fe0000, 0 0 4px #fe0000, 0 0 10px #fe0000, 0 0 10px #fe0000;
+
+        [class^="icon-"] {
+            margin-right: 10px;
+            font-size: 20px;
+            vertical-align: middle;
+        }
+    }
+
+    &__wrap {
+        font-size: 0;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    &__item {
+        display: inline-block;
+        font-size: 14px;
+        text-align: left;
+        width: 50%;
+        padding-left: 120px;
+        box-sizing: border-box;
+        margin-bottom: 80px;
+        position: relative;
+
+        [class^="icon-"] {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            float: left;
+            font-size: 80px;
+            color: #fe0000;
+            text-shadow: 0 0 20px #fe0000, 0 0 20px #fe0000;
+            transform: translate3d(0,-50%,0);
+        }
+    }
+
+    &__item-title {
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    &__item-description {
+        color: rgba(#fff,.5);
+        max-width: 180px;
+        min-height: 36px;
+    }
+
+    &__btn {
+        display: inline-block;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-decoration: none;
+        min-width: 114px;
+        text-align: center;
+        background: #ca1e10;
+        box-shadow: 0 0 7px #fe0000;
+        color: #fff;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        line-height: 20px;
+        border-radius: 40px;
+    }
+}
