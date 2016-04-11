@@ -1,6 +1,21 @@
 $(document).ready(function() {
 
 
+    $('.js-sent-status').click(function(){
+        $(this).hide(100);
+        $('.js-show-status').show(100);
+    });
+
+
+    /**
+     * Remodal
+     * https://github.com/VodkaBears/Remodal
+     */
+    $('.js-popup').remodal({
+        // closeOnEscape: false
+    });
+
+
     /**
      * EasyTabs
      * https://github.com/JangoSteve/jQuery-EasyTabs
