@@ -1617,7 +1617,7 @@ main {
 }
 
 body {
-  background: url("/assets/img/bg.jpg") no-repeat top center;
+  background: url(../img/bg.jpg) no-repeat top center;
   background-size: cover;
 }
 
