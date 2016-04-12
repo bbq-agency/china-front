@@ -2,26 +2,20 @@
     <div class="choose-gift__title">Choose Bonus</div>
 
     <div class="choose-gift__list">
-        <div class="choose-gift__item">
-            <label class="choose-gift__label" for="gift1">
-                <input class="choose-gift__radio" type="radio" name="gift" id="gift1">
-                <div class="choose-gift__item-name">$ 1 500 bonus</div>
-            </label>
-        </div>
-
-        <div class="choose-gift__item">
-            <label class="choose-gift__label" for="gift2">
-                <input class="choose-gift__radio" type="radio" name="gift" id="gift2">
-                <div class="choose-gift__item-name">15 gift spins</div>
-            </label>
-        </div>
-
-        <div class="choose-gift__item">
-            <label class="choose-gift__label" for="gift2">
-                <input class="choose-gift__radio" type="radio" name="gift" id="gift2">
-                <div class="choose-gift__item-name">200 compoints</div>
-            </label>
-        </div>
+        {% assign gifts = site.data.gifts %}
+        {% for i in gifts %}
+            <div class="choose-gift__item">
+                <input class="choose-gift__radio" type="radio" name="gift" id="{{ i.gift-id }}">
+                <label class="choose-gift__label" for="{{ i.gift-id }}">
+                    {% for cover in site.static_files %}
+                        {% if cover.path contains i.gift-id and cover.path contains 'gifts' %}
+                            <img class="choose-gift__img" src="{{ site.baseurl }}{{ cover.path }}" alt="Gift {{ i.gift-name }}">
+                        {% endif %}
+                    {% endfor %}
+                    <div class="choose-gift__item-name">{{ i.gift-name }}</div>
+                </label>
+            </div>
+        {% endfor %}
     </div>
 
     <a href="javascript:void(0)" class="choose-gift__link">Choose Bonus Later</a>

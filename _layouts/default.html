@@ -60,7 +60,7 @@
         }
     </style>
     <div class="not-for-prod">
-        <div><a href="{{ site.baseurl }}/" class="a {% if page.url == '/' %}selected{% endif %}">home</a></div>
+        <div><a href="{{ site.baseurl }}/" class="a {% if page.url == '/' %}selected{% endif %}">landing</a></div>
         {% assign pages = site.posts | where: "type", "page" | sort: 'title' %}
         {% for i in pages %}
         <div><a href="{{ site.baseurl }}/{{ i.permalink }}" class="a {% if page.url contains i.id %}selected{% endif %}">{{ i.id }}</a></div>
