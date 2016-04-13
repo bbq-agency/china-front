@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ page.title }} | China Front</title>
+    <meta name="description" content="China Front">
+    <meta name="keywords" content="China Front">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500|Montserrat&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicons/favicon-32.png">
+    <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/img/favicons/favicon-144.png">
+</head>
+<body>
+
+    <main>
+        {{ content }}
+    </main>
+
+    {% include popups/PopupSignIn.html %}
+    {% include popups/PopupSignUp.html %}
+    {% include popups/PopupSignUpPhoneConfirm.html %}
+    {% include popups/PopupSignUpSocialConfirm.html %}
+    {% include popups/PopupForgotStepOne.html %}
+    {% include popups/PopupForgotStepTwo.html %}
+    {% include popups/PopupForgotStepThree.html %}
+
+    <script src="{{ site.baseurl }}/assets/js/vendor/jquery-1.11.3.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/vendor/slick.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/vendor/jquery.easytabs.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/vendor/remodal.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+
+    <!-- not for prod -->
+    <style>
+        .not-for-prod {
+            position: fixed;
+            top: 40%;
+            right: 0;
+            padding: 10px;
+            background: #666;
+            font-size: 10px;
+            z-index: 10010;
+            border-radius: 5px 0 0 5px;
+            transition: transform .2s ease; 
+            transform: translate3d(-75%,0,0);
+            transform: translate3d(0,0,0);
+        }
+        .not-for-prod:hover {
+        }
+        .not-for-prod a {
+            color: #999;
+            outline: none;
+        }
+        .not-for-prod a.selected{
+            color: #fff;
+        }
+    </style>
+    <div class="not-for-prod">
+        <div><a href="{{ site.baseurl }}/" class="a {% if page.url == '/' %}selected{% endif %}">landing</a></div>
+        {% assign pages = site.posts | where: "type", "page" | sort: 'title' %}
+        {% for i in pages %}
+        <div><a href="{{ site.baseurl }}/{{ i.permalink }}" class="a {% if page.url contains i.id %}selected{% endif %}">{{ i.id }}</a></div>
+        {% endfor %}
+        <br>
+        <div><span style="color: #fff;">Popups:</span></div>
+        <div><a href="{{ site.baseurl }}/#SignIn">Sign In</a></div>
+        <div><a href="{{ site.baseurl }}/#SignUp">Sign Up</a></div>
+        <div><a href="{{ site.baseurl }}/#SignUpPhoneConfirm">Sign Up Phone Confirm</a></div>
+        <div><a href="{{ site.baseurl }}/#SignUpSocialConfirm">Sign Up Social Confirm</a></div>
+        <div><a href="{{ site.baseurl }}/#ForgotStepOne">Forgot Step One</a></div>
+        <div><a href="{{ site.baseurl }}/#ForgotStepTwo">Forgot Step Two</a></div>
+        <div><a href="{{ site.baseurl }}/#ForgotStepThree">Forgot Step Three</a></div>
+        <br>
+        <div>
+            <span style="color: #999;">authorized:</span>
+            {% if site.authorized == true %}
+                <span style="color: #fff;">true</span>
+            {% else %}
+                <span style="color: #fff;">false</span>
+            {% endif %}
+        </div>
+    </div>
+    <!-- not for prod end -->
+</body>
+</html>

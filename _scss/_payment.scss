@@ -1,0 +1,68 @@
+.payment {
+    background: #1a1a1a;
+    padding: 30px 2%;
+    font-size: 0;
+    text-align: center;
+
+    &__item {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 15px 20px;
+
+        &--visa {
+            @include sprite($visa);
+        }
+
+        &--mastercard {
+            @include sprite($mastercard);
+        }
+
+        &--qiwi {
+            @include sprite($qiwi);
+        }
+
+        &--alfaclick {
+            @include sprite($alfaclick);
+        }
+
+        &--yandexmoney {
+            @include sprite($yandexmoney);
+        }
+
+        &--webmoney {
+            @include sprite($webmoney);
+        }
+
+        &--moneta {
+            @include sprite($moneta);
+        }
+
+        &--privat24 {
+            @include sprite($privat24);
+        }
+
+        &--dengimailru {
+            @include sprite($dengimailru);
+        }
+
+        &--interkassa {
+            @include sprite($interkassa);
+        }
+
+        &--neteller {
+            @include sprite($neteller);
+        }
+
+        &--liqpay {
+            @include sprite($liqpay);
+        }
+
+        &--walletone {
+            @include sprite($walletone);
+        }
+
+        &--skrill {
+            @include sprite($skrill);
+        }
+    }
+}

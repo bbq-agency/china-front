@@ -1,0 +1,118 @@
+.signin {
+    max-width: 354px;
+    margin: 0 auto 25px;
+
+    &__userpic {
+        display: inline-block;
+        border-radius: 100px;
+        max-width: 60px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    &__username {
+        color: #fff;
+        font-size: 14px;
+        margin-bottom: 35px;
+        font-weight: 500
+    }
+
+    &__title {
+        color: #808080;
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    &__mail-accepted {
+        color: #fe0000;
+        font-size: 50px;
+        display: block;
+        margin-bottom: 25px;
+        text-shadow: 0 0 5px #fe0000, 0 0 10px #fe0000, 0 0 10px #fe0000;
+    }
+
+    &__row {
+        max-width: 260px;
+        margin: 0 auto 25px;
+        position: relative;
+    }
+
+    &__text {
+        @include input;
+        padding-right: 110px;
+    }
+
+    &__password {
+        @include input;
+        padding-right: 80px;
+    }
+
+    &__input-link {
+        position: absolute;
+        top: 10px;
+        right: 22px;
+        color: #fff;
+        font-weight: 500;
+        text-decoration: none;
+        line-height: 20px;
+    }
+
+    &__sent-status {
+        position: absolute;
+        top: 10px;
+        right: 22px;
+        color: #808080;
+        line-height: 20px;
+    }
+
+    &__remember {
+        color: #808080;
+        margin-bottom: 25px;
+    }
+
+    &__label {
+        color: #808080;
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+
+        &::selection {
+            background: transparent;
+        }
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__check-bar {
+        font-size: 26px;
+        vertical-align: middle;
+        color: #333;
+        margin-right: 10px;
+    }
+
+    &__checked {
+        position: absolute;
+        left: 5px;
+        top: -5px;
+        font-size: 26px;
+        color: #fff;
+        opacity: 0;
+        transition: opacity .2s ease;
+
+        .signin__checkbox:checked ~ & {
+            opacity: 1;
+        }
+    }
+
+    &__btn-primary {
+        @include btn--primary;
+        min-width: 135px;
+    }
+
+    &__btn-ghost {
+        @include btn--ghost;
+        min-width: 135px;
+    }
+}

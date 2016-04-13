@@ -1,0 +1,239 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$alfaclick-name: 'alfaclick';
+$alfaclick-x: 137px;
+$alfaclick-y: 0px;
+$alfaclick-offset-x: -137px;
+$alfaclick-offset-y: 0px;
+$alfaclick-width: 98px;
+$alfaclick-height: 27px;
+$alfaclick-total-width: 299px;
+$alfaclick-total-height: 232px;
+$alfaclick-image: '../img/sprites/sprite-payments.png';
+$alfaclick: (137px, 0px, -137px, 0px, 98px, 27px, 299px, 232px, '../img/sprites/sprite-payments.png', 'alfaclick', );
+$dengimailru-name: 'dengimailru';
+$dengimailru-x: 0px;
+$dengimailru-y: 128px;
+$dengimailru-offset-x: 0px;
+$dengimailru-offset-y: -128px;
+$dengimailru-width: 105px;
+$dengimailru-height: 20px;
+$dengimailru-total-width: 299px;
+$dengimailru-total-height: 232px;
+$dengimailru-image: '../img/sprites/sprite-payments.png';
+$dengimailru: (0px, 128px, 0px, -128px, 105px, 20px, 299px, 232px, '../img/sprites/sprite-payments.png', 'dengimailru', );
+$interkassa-name: 'interkassa';
+$interkassa-x: 137px;
+$interkassa-y: 87px;
+$interkassa-offset-x: -137px;
+$interkassa-offset-y: -87px;
+$interkassa-width: 90px;
+$interkassa-height: 26px;
+$interkassa-total-width: 299px;
+$interkassa-total-height: 232px;
+$interkassa-image: '../img/sprites/sprite-payments.png';
+$interkassa: (137px, 87px, -137px, -87px, 90px, 26px, 299px, 232px, '../img/sprites/sprite-payments.png', 'interkassa', );
+$liqpay-name: 'liqpay';
+$liqpay-x: 117px;
+$liqpay-y: 128px;
+$liqpay-offset-x: -117px;
+$liqpay-offset-y: -128px;
+$liqpay-width: 79px;
+$liqpay-height: 15px;
+$liqpay-total-width: 299px;
+$liqpay-total-height: 232px;
+$liqpay-image: '../img/sprites/sprite-payments.png';
+$liqpay: (117px, 128px, -117px, -128px, 79px, 15px, 299px, 232px, '../img/sprites/sprite-payments.png', 'liqpay', );
+$mastercard-name: 'mastercard';
+$mastercard-x: 76px;
+$mastercard-y: 160px;
+$mastercard-offset-x: -76px;
+$mastercard-offset-y: -160px;
+$mastercard-width: 54px;
+$mastercard-height: 33px;
+$mastercard-total-width: 299px;
+$mastercard-total-height: 232px;
+$mastercard-image: '../img/sprites/sprite-payments.png';
+$mastercard: (76px, 160px, -76px, -160px, 54px, 33px, 299px, 232px, '../img/sprites/sprite-payments.png', 'mastercard', );
+$moneta-name: 'moneta';
+$moneta-x: 0px;
+$moneta-y: 44px;
+$moneta-offset-x: 0px;
+$moneta-offset-y: -44px;
+$moneta-width: 89px;
+$moneta-height: 35px;
+$moneta-total-width: 299px;
+$moneta-total-height: 232px;
+$moneta-image: '../img/sprites/sprite-payments.png';
+$moneta: (0px, 44px, 0px, -44px, 89px, 35px, 299px, 232px, '../img/sprites/sprite-payments.png', 'moneta', );
+$neteller-name: 'neteller';
+$neteller-x: 57px;
+$neteller-y: 205px;
+$neteller-offset-x: -57px;
+$neteller-offset-y: -205px;
+$neteller-width: 74px;
+$neteller-height: 13px;
+$neteller-total-width: 299px;
+$neteller-total-height: 232px;
+$neteller-image: '../img/sprites/sprite-payments.png';
+$neteller: (57px, 205px, -57px, -205px, 74px, 13px, 299px, 232px, '../img/sprites/sprite-payments.png', 'neteller', );
+$privat24-name: 'privat24';
+$privat24-x: 0px;
+$privat24-y: 91px;
+$privat24-offset-x: 0px;
+$privat24-offset-y: -91px;
+$privat24-width: 112px;
+$privat24-height: 25px;
+$privat24-total-width: 299px;
+$privat24-total-height: 232px;
+$privat24-image: '../img/sprites/sprite-payments.png';
+$privat24: (0px, 91px, 0px, -91px, 112px, 25px, 299px, 232px, '../img/sprites/sprite-payments.png', 'privat24', );
+$qiwi-name: 'qiwi';
+$qiwi-x: 0px;
+$qiwi-y: 160px;
+$qiwi-offset-x: 0px;
+$qiwi-offset-y: -160px;
+$qiwi-width: 64px;
+$qiwi-height: 33px;
+$qiwi-total-width: 299px;
+$qiwi-total-height: 232px;
+$qiwi-image: '../img/sprites/sprite-payments.png';
+$qiwi: (0px, 160px, 0px, -160px, 64px, 33px, 299px, 232px, '../img/sprites/sprite-payments.png', 'qiwi', );
+$skrill-name: 'skrill';
+$skrill-x: 142px;
+$skrill-y: 160px;
+$skrill-offset-x: -142px;
+$skrill-offset-y: -160px;
+$skrill-width: 56px;
+$skrill-height: 30px;
+$skrill-total-width: 299px;
+$skrill-total-height: 232px;
+$skrill-image: '../img/sprites/sprite-payments.png';
+$skrill: (142px, 160px, -142px, -160px, 56px, 30px, 299px, 232px, '../img/sprites/sprite-payments.png', 'skrill', );
+$visa-name: 'visa';
+$visa-x: 247px;
+$visa-y: 0px;
+$visa-offset-x: -247px;
+$visa-offset-y: 0px;
+$visa-width: 52px;
+$visa-height: 18px;
+$visa-total-width: 299px;
+$visa-total-height: 232px;
+$visa-image: '../img/sprites/sprite-payments.png';
+$visa: (247px, 0px, -247px, 0px, 52px, 18px, 299px, 232px, '../img/sprites/sprite-payments.png', 'visa', );
+$walletone-name: 'walletone';
+$walletone-x: 0px;
+$walletone-y: 205px;
+$walletone-offset-x: 0px;
+$walletone-offset-y: -205px;
+$walletone-width: 45px;
+$walletone-height: 27px;
+$walletone-total-width: 299px;
+$walletone-total-height: 232px;
+$walletone-image: '../img/sprites/sprite-payments.png';
+$walletone: (0px, 205px, 0px, -205px, 45px, 27px, 299px, 232px, '../img/sprites/sprite-payments.png', 'walletone', );
+$webmoney-name: 'webmoney';
+$webmoney-x: 0px;
+$webmoney-y: 0px;
+$webmoney-offset-x: 0px;
+$webmoney-offset-y: 0px;
+$webmoney-width: 125px;
+$webmoney-height: 32px;
+$webmoney-total-width: 299px;
+$webmoney-total-height: 232px;
+$webmoney-image: '../img/sprites/sprite-payments.png';
+$webmoney: (0px, 0px, 0px, 0px, 125px, 32px, 299px, 232px, '../img/sprites/sprite-payments.png', 'webmoney', );
+$yandexmoney-name: 'yandexmoney';
+$yandexmoney-x: 137px;
+$yandexmoney-y: 39px;
+$yandexmoney-offset-x: -137px;
+$yandexmoney-offset-y: -39px;
+$yandexmoney-width: 70px;
+$yandexmoney-height: 36px;
+$yandexmoney-total-width: 299px;
+$yandexmoney-total-height: 232px;
+$yandexmoney-image: '../img/sprites/sprite-payments.png';
+$yandexmoney: (137px, 39px, -137px, -39px, 70px, 36px, 299px, 232px, '../img/sprites/sprite-payments.png', 'yandexmoney', );
+$spritesheet-width: 299px;
+$spritesheet-height: 232px;
+$spritesheet-image: '../img/sprites/sprite-payments.png';
+$spritesheet-sprites: ($alfaclick, $dengimailru, $interkassa, $liqpay, $mastercard, $moneta, $neteller, $privat24, $qiwi, $skrill, $visa, $walletone, $webmoney, $yandexmoney, );
+$spritesheet: (299px, 232px, '../img/sprites/sprite-payments.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

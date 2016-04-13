@@ -1,0 +1,17 @@
+<div data-remodal-id="ForgotStepTwo" class="popup js-popup">
+    <button data-remodal-action="close" class="popup__close"><span class="icon-close"></span></button>
+
+    <img class="popup__logo" src="{{ site.baseurl }}/assets/img/logo.png">
+    <div class="popup__title">Password Reset</div>
+
+    <div class="signin">
+        <span class="signin__mail-accepted icon-mail-accepted"></span>
+
+        <div class="signin__title">Please check your email for the password we just sent you. If you did not receive your password. click Resend Password.</div>
+
+        <a href="javascript:void(0)" class="signin__btn-ghost">Resend Email</a>
+    </div>
+
+    {% include popups/_QuestionForgot.html %}
+
+</div>

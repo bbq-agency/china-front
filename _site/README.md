@@ -1,2 +1,0 @@
-# lending-test
-lending-test

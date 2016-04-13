@@ -1,1 +1,5 @@
-baseurl: /landing-test
+baseurl: '/landing-test'
+exclude: ['README.md', 'node_modules', 'gulpfile.js', 'package.json']
+
+# authorized
+authorized: false

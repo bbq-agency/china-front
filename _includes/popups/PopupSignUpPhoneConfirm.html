@@ -1,0 +1,21 @@
+<div data-remodal-id="SignUpPhoneConfirm" class="popup js-popup">
+    <button data-remodal-action="close" class="popup__close"><span class="icon-close"></span></button>
+
+    <img class="popup__logo" src="{{ site.baseurl }}/assets/img/logo.png">
+    <div class="popup__title">Sign Up</div>
+
+    <div class="signin">
+        <div class="signin__title">Введите sms код который пришел на указаный вами номер телефона +380 95 126 26 80</div>
+
+        <div class="signin__row">
+            <input class="signin__text" type="text" placeholder="SMS Code">
+            <a class="signin__input-link js-sent-status" href="javascript:void(0)">Resend Code</a>
+            <span class="signin__sent-status js-show-status" style="display:none;">Sent: 14:35</span>
+        </div>
+
+        <a href="javascript:void(0)" class="signin__btn-primary">Finish Sign Up</a>
+    </div>
+
+    {% include popups/_QuestionSignIn.html %}
+
+</div>

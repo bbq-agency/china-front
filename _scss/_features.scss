@@ -1,0 +1,85 @@
+.features {
+    @include clearfix;
+    margin-top: 75px;
+
+    @media (min-width: 508px) {
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        width: 460px;
+    }
+
+    @media (min-width: 754px) {
+        width: 640px
+    }
+
+    &__item {
+        width: 50%;
+        float: left;
+        text-align: center;
+        min-height: 135px;
+    }
+
+    &__header {
+        min-height: 60px;
+
+        @media (min-width: 508px) {
+            display: table-cell;
+            vertical-align: top;
+        }
+    }
+
+    &__content {
+
+        @media (min-width: 508px) {
+            display: table-cell;
+            vertical-align: top;
+            text-align: left;
+            padding-left: 20px;
+            padding-right: 20px;
+            max-width: 300px;
+        }
+    }
+
+    &__title {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #fff;
+        padding-bottom: 5px;
+    }
+
+    &__descr {
+        font-size: 14px;
+        color: #fff;
+        opacity: 0.5;
+        display: none;
+
+        @media (min-width: 508px) {
+            display: block;
+        }
+    }
+
+    .icon {
+        color: #fe0000;
+        text-shadow: 0 0 5px #f00, 0 0 10px #f00, 0 0 10px #f00;
+        line-height: 51px;
+        position: relative;
+
+        &-money-pack {
+            font-size: 33px;
+        }
+
+        &-accent {
+            font-size: 49px;
+            top: -7px;
+        }
+
+        &-medal {
+            font-size: 51px;
+        }
+
+        &-headset {
+            font-size: 48px;
+        }
+    }
+}
