@@ -1,6 +1,7 @@
 .footer {
     background: #141414;
-    padding: 30px 4% 20px;
+    // padding: 30px 4% 20px;
+    padding: 30px 4%;
     text-align: center;
     @include clearfix;
 
@@ -19,7 +20,9 @@
     }
 
     &__lang {
-        float: left;
+        @include media(S) {
+            float: left;
+        }
     }
 
     &__lang-link {
@@ -42,17 +45,28 @@
     }
 
     &__copyright {
-        float: right;
         color: rgba(#fff,.4);
         font-size: 12px;
+        margin-top: 20px;
+
+        @include media(S) {
+            float: right;
+            margin-top: 15px;
+        }
 
         [class^="icon-"] {
+            display: block;
+            margin-bottom: 15px;
             font-size: 45px;
-            line-height: 0;
-            vertical-align: middle;
             color: #f1f9c7;
-            margin-right: 21px;
             text-shadow: 0 0 10px #fe0000, 0 0 10px #fe0000, 0 0 10px #fe0000, 0 0 20px #fe0000;
+        
+            @include media(S) {
+                display: inline;
+                line-height: 0;
+                vertical-align: middle;
+                margin-right: 21px;
+            }
         }
     }
 }

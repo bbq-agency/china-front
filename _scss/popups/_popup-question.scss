@@ -30,7 +30,8 @@
         }
     }
 
-    &__btn {
+    &__btn {        
+        @include btn;
         @include btn--ghost;
         min-width: 135px;
 

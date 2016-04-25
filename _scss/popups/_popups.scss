@@ -35,6 +35,7 @@
     }
 
     &__btn-signin {
+        @include btn;
         @include btn--primary;
         min-width: 135px;
     }

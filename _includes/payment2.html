@@ -1,0 +1,8 @@
+<div class="payment">
+	<div class="payment__list">
+	    {% assign payment = site.data.payment %}
+	    {% for i in payment %}
+	        <div class="payment__item payment__item--{{ i.payment-item }}"></div>
+	    {% endfor %}
+    </div>
+</div>

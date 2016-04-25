@@ -3,10 +3,22 @@
 
     &__item {
         float: left;
-        @include ratio(33.33333%,866,524);
+        @include ratio(100%,866,524);
 
-        &:nth-child(1) {
-            @include ratio(66.66666%,866,524);
+        @include media(S) {
+            @include ratio(50%,866,524);
+
+            &:nth-child(1) {
+                @include ratio(100%,866,524);
+            }
+        }
+
+        @include media(M) {
+            @include ratio(33.33333%,866,524);
+
+            &:nth-child(1) {
+                @include ratio(66.66666%,866,524);
+            }
         }
     }
 
@@ -20,3 +32,5 @@
         transform: translate3d(-50%,-50%,0);
     }
 }
+
+// docker exec -it ssleapi_mongo_1 mongo

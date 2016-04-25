@@ -84,10 +84,12 @@ gulp.task('watch', ['jsMin'], function () {
             '_layouts/*.html',
             '_includes/**/*.html',
             '_posts/**/*',
+            '_data/*',
             'assets/img/**/*',
             'assets/fonts/**/*',
             'assets/js/**/*',
-            '_config.yml'
+            '_config.yml',
+            '_config_dev.yml'
         ], ['jekyll-rebuild']);
 });
 

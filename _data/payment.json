@@ -1,0 +1,44 @@
+[
+    {
+        "payment-item": "visa",
+    },
+    {
+        "payment-item": "mastercard",
+    },
+    {
+        "payment-item": "qiwi",
+    },
+    {
+        "payment-item": "alfaclick",
+    },
+    {
+        "payment-item": "yandexmoney",
+    },
+    {
+        "payment-item": "webmoney",
+    },
+    {
+        "payment-item": "moneta",
+    },
+    {
+        "payment-item": "privat24",
+    },
+    {
+        "payment-item": "dengimailru",
+    },
+    {
+        "payment-item": "interkassa",
+    },
+    {
+        "payment-item": "neteller",
+    },
+    {
+        "payment-item": "liqpay",
+    },
+    {
+        "payment-item": "walletone",
+    },
+    {
+        "payment-item": "skrill",
+    },
+]

@@ -107,11 +107,13 @@
     }
 
     &__btn-primary {
+        @include btn;
         @include btn--primary;
         min-width: 135px;
     }
 
     &__btn-ghost {
+        @include btn;
         @include btn--ghost;
         min-width: 135px;
     }

@@ -15,25 +15,54 @@
 }
 
 @mixin btn--primary {
-    @include btn;
     background: #ca1e10;
-    box-shadow: 0 0 7px #fe0000;
+    box-shadow: 0 0 10px #fe0000, 0 0 10px #fe0000;
+    transition: box-shadow .2s ease;
+
+    &:hover {  
+        box-shadow: 0 0 10px #fe0000, 0 0 10px #fe0000, 0 0 10px #fe0000;     
+    }
+
+    &:active {  
+        box-shadow: 0 0 10px #fe0000;
+    }
 }
 
 @mixin btn--ghost {
-    @include btn;
     background: transparent;
     border: 1px solid rgba(#fff,.4);
+    transition: background-color .2s ease, border-color .2s ease;
+
+    &:hover {
+        background-color: #666;
+        border-color: #666;
+    }
+
+    &:active {
+        background-color: #4D4D4D;
+        border-color: #4D4D4D;
+    }
 }
 
 @mixin btn--fb {
-    @include btn;
     color: #ccc;
     background: #fff;
 }
 
 @mixin btn--tw {
-    @include btn;
     color: #ccc;
     background: #fff;
+}
+
+@mixin btn--hero {
+    background: #280300;
+    background: radial-gradient(transparent, rgba(#ff0000,.5));
+    font-size: 32px;
+    font-weight: 500;
+    padding: 20px 22px;
+    color: #f1f9c7;
+    text-shadow: 0 0 4px #fe0000, 0 0 4px #fe0000, 0 0 10px #fe0000, 0 0 10px #fe0000;
+    border: 2px solid #f1f9c7;
+    box-shadow: 0 0 10px #fe0000, 0 0 20px #fe0000, inset 0 0 10px #fe0000, inset 0 0 20px #fe0000;
+    min-width: 205px;
 }

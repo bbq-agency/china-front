@@ -9,7 +9,7 @@
     <meta name="description" content="China Front">
     <meta name="keywords" content="China Front">
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500|Montserrat&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
     <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicons/favicon-32.png">
     <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/img/favicons/favicon-144.png">
@@ -60,20 +60,20 @@
         }
     </style>
     <div class="not-for-prod">
-        <div><a href="{{ site.baseurl }}/" class="a {% if page.url == '/' %}selected{% endif %}">landing</a></div>
+        <div><a href="{{ site.baseurl }}/" class="a {% if page.url == '/' %}selected{% endif %}">index</a></div>
         {% assign pages = site.posts | where: "type", "page" | sort: 'title' %}
         {% for i in pages %}
-        <div><a href="{{ site.baseurl }}/{{ i.permalink }}" class="a {% if page.url contains i.id %}selected{% endif %}">{{ i.id }}</a></div>
+        <div><a href="{{ site.baseurl }}{{ i.permalink }}" class="a {% if page.url contains i.id %}selected{% endif %}">{{ i.id }}</a></div>
         {% endfor %}
         <br>
         <div><span style="color: #fff;">Popups:</span></div>
-        <div><a href="{{ site.baseurl }}/#SignIn">Sign In</a></div>
-        <div><a href="{{ site.baseurl }}/#SignUp">Sign Up</a></div>
-        <div><a href="{{ site.baseurl }}/#SignUpPhoneConfirm">Sign Up Phone Confirm</a></div>
-        <div><a href="{{ site.baseurl }}/#SignUpSocialConfirm">Sign Up Social Confirm</a></div>
-        <div><a href="{{ site.baseurl }}/#ForgotStepOne">Forgot Step One</a></div>
-        <div><a href="{{ site.baseurl }}/#ForgotStepTwo">Forgot Step Two</a></div>
-        <div><a href="{{ site.baseurl }}/#ForgotStepThree">Forgot Step Three</a></div>
+        <div><a href="{{ site.baseurl }}{{ page.url }}#SignIn">Sign In</a></div>
+        <div><a href="{{ site.baseurl }}{{ page.url }}#SignUp">Sign Up</a></div>
+        <div><a href="{{ site.baseurl }}{{ page.url }}#SignUpPhoneConfirm">Sign Up Phone Confirm</a></div>
+        <div><a href="{{ site.baseurl }}{{ page.url }}#SignUpSocialConfirm">Sign Up Social Confirm</a></div>
+        <div><a href="{{ site.baseurl }}{{ page.url }}#ForgotStepOne">Forgot Step One</a></div>
+        <div><a href="{{ site.baseurl }}{{ page.url }}#ForgotStepTwo">Forgot Step Two</a></div>
+        <div><a href="{{ site.baseurl }}{{ page.url }}#ForgotStepThree">Forgot Step Three</a></div>
         <br>
         <div>
             <span style="color: #999;">authorized:</span>

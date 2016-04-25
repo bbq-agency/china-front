@@ -5,7 +5,7 @@
         <ul class="game-categories__list">
             <li class="game-categories__item">
                 <a href="#top-lists" class="game-categories__link">
-                    <span class="icon-star-bordered"></span>
+                    <span class="icon-flag"></span>
                     <div class="game-categories__item-title">Top Lists</div>
                 </a>
             </li>
@@ -23,7 +23,7 @@
             </li>
             <li class="game-categories__item">
                 <a href="#pokers" class="game-categories__link">
-                    <span class="icon-pockers"></span>
+                    <span class="icon-pokers"></span>
                     <div class="game-categories__item-title">Pokers</div>
                 </a>
             </li>
@@ -44,7 +44,7 @@
             <div class="game-list__wrap">
                 {% assign games = site.categories.games %}
                 {% for i in games limit: 18 %}
-                    {% include home/game-list__item.html %}
+                    {% include game-list__item.html %}
                 {% endfor %}
             </div>
             <a href="#" class="game-list__btn">All Games</a>
@@ -54,7 +54,7 @@
             <div class="game-list__wrap">
                 {% assign games = site.categories.games | where: "game-type", "cards" %}
                 {% for i in games limit: 18 %}
-                    {% include home/game-list__item.html %}
+                    {% include game-list__item.html %}
                 {% endfor %}
             </div>
             <a href="#" class="game-list__btn">All Games</a>
@@ -64,7 +64,7 @@
             <div class="game-list__wrap">
                 {% assign games = site.categories.games | where: "game-type", "slots" %}
                 {% for i in games limit: 18 %}
-                    {% include home/game-list__item.html %}
+                    {% include game-list__item.html %}
                 {% endfor %}
             </div>
             <a href="#" class="game-list__btn">All Games</a>
@@ -74,7 +74,7 @@
             <div class="game-list__wrap">
                 {% assign games = site.categories.games | where: "game-type", "pokers" %}
                 {% for i in games limit: 18 %}
-                    {% include home/game-list__item.html %}
+                    {% include game-list__item.html %}
                 {% endfor %}
             </div>
             <a href="#" class="game-list__btn">All Games</a>
@@ -84,7 +84,7 @@
             <div class="game-list__wrap">
                 {% assign games = site.categories.games | where: "game-type", "roulette" %}
                 {% for i in games limit: 18 %}
-                    {% include home/game-list__item.html %}
+                    {% include game-list__item.html %}
                 {% endfor %}
             </div>
             <a href="#" class="game-list__btn">All Games</a>

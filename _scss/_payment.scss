@@ -1,13 +1,22 @@
 .payment {
-    background: #1a1a1a;
-    padding: 30px 2%;
-    font-size: 0;
-    text-align: center;
+    overflow: hidden;
 
+    &__list {
+        background: #1a1a1a;
+        padding: 15px 2%;
+        font-size: 0;
+        text-align: center;
+        width: 845px;
+
+        @include media(M) {
+            padding: 40px 2%;
+            width: 100%;
+        }
+    }
     &__item {
         display: inline-block;
         vertical-align: middle;
-        margin: 15px 20px;
+        margin: 20px;
 
         &--visa {
             @include sprite($visa);

@@ -16,21 +16,23 @@
 
 // UX
 @import 'base';
-@import 'header';
+// @import 'header';
+@import 'mainnav';
+// @import 'hero';
+@import 'hero2';
 @import 'dropdown';
 @import 'flag-holder';
 @import "auth";
 @import 'main-nav';
 @import "buttons";
-@import 'hero';
-@import "features";
+@import "features2";
 @import 'banner-games';
-@import 'game-promo';
+@import 'game-promo2';
 @import 'game-categories';
 @import 'game-list';
 @import 'winners';
 @import 'payment';
-@import 'footer';
+@import 'footer2';
 @import 'afterfooter';
 @import 'popups/popups';
 @import 'popups/social-signin';

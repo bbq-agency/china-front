@@ -1,0 +1,33 @@
+<div class="mainnav">
+    <nav>
+        <a href="javasript:void(0)">Menu</a>
+        <a href="javasript:void(0)">Dashboard</a>
+        <a href="javasript:void(0)">All Games</a>
+    </nav>
+
+    <nav>
+        <a href="javasript:void(0)">Logo</a>
+    </nav>
+
+    <nav>
+        <a href="javasript:void(0)">En</a>
+    </nav>
+
+    <nav>
+        {% if site.authorized == true %}
+            <span>user-pic</span>
+            <span>user-name</span>
+            <span>user-ballance</span>
+            <a href="javasript:void(0)">user-message 2</a>
+            <a href="javasript:void(0)">Support</a>
+            <a href="javasript:void(0)">Deposit</a>
+        {% else %}
+            <a href="javasript:void(0)">Login</a>
+            <a href="javasript:void(0)">Sign Up</a>
+            <span>or</span>
+            <a href="javasript:void(0)">Fb</a>
+            <a href="javasript:void(0)">Tw</a>
+            <a href="javasript:void(0)"><span class="icon-arrow-down"></span></a>
+        {% endif %}
+    </nav>
+</div>

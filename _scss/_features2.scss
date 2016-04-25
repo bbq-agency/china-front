@@ -1,0 +1,66 @@
+.features {
+    @include clearfix;
+    padding: 60px 30px 0px;
+
+    @include media(M) {
+        padding: 60px 80px 0px;
+    }
+
+    @include media(L) {
+        padding: 120px 50px 20px;
+    }
+
+    &__item {
+        width: 50%;
+        // display: inline-block;
+        position: relative;
+        text-align: center;
+        box-sizing: border-box;
+        float: left;
+        margin-bottom: 40px;
+        padding-right: 20px;
+
+        @include media(S) {
+            padding: 0 30px 0 70px;
+            text-align: left;
+        }
+
+        @include media(L) {
+            width: 25%;
+        }
+
+        [class^="icon-"] {
+            color: #fe0000;
+            font-size: 33px;
+            text-shadow: 0 0 5px #FF0000,0 0 10px #FF0000,0 0 10px #FF0000;
+
+            @include media(S) {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #fff;
+        padding-top: 20px;
+
+        @include media(S) {
+            padding: 0 0 5px 0;
+        }
+    }
+
+    &__description {
+        font-size: 14px;
+        color: #fff;
+        opacity: 0.5;
+        display: none;
+
+        @include media(S) {
+            display: block;
+        }
+    }
+}
