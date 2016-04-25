@@ -92,13 +92,21 @@
 
     &__info-container {
         @include clearfix;
-        position: absolute;
-        bottom: 0;
-        left: 0;
         width: 100%;
-        padding: 0 80px;
+        padding: 20px 12% 0;
         box-sizing: border-box;
         z-index: 150;
+
+        @include media(S) {
+            padding: 20px 10% 0;
+        }
+
+        @include media(L) {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 0px 12%;
+        }
     }
 
     &__info {
@@ -114,6 +122,7 @@
     }
 
     &__info-name {
+        text-align: center;
         font-size: 12px;
         text-transform: uppercase;
         letter-spacing: 0.52px;
@@ -121,31 +130,44 @@
         text-shadow: 0 0 4px #fe0000, 0 0 4px #fe0000, 0 0 10px #fe0000, 0 0 10px #fe0000;
         font-weight: 500;
         margin-bottom: 10px;
+
+        @include media(M) {
+            text-align: inherit;
+        }
     }
 
     &__info-amount {
-        font-size: 35px;
+        font-size: 20px;
         font-family: 'Montserrat', sans-serif;
         letter-spacing: 0.07px;
         color: #f1f9c7;
         text-shadow: 0 0 4px #fe0000, 0 0 4px #fe0000, 0 0 10px #fe0000, 0 0 10px #fe0000;
         position: relative;
+
+        @include media(S) {
+            font-size: 35px;
+        }
     }
 
     &__info-icon {
-        text-shadow: 0 0 5px #fe0000, 0 0 10px #fe0000, 0 0 10px #fe0000;
-        position: absolute;
-        top: 50%;
-        font-size: 40px;
-        margin-top: -20px;
+        display: none;
 
-        .hero__info:nth-child(odd) & {
-            right: 100%;
-            padding-right: 20px;
-        }
-        .hero__info:nth-child(even) & {
-            left: 100%;
-            padding-left: 20px;
+        @include media(M) {
+            display: block;
+            text-shadow: 0 0 5px #fe0000, 0 0 10px #fe0000, 0 0 10px #fe0000;
+            position: absolute;
+            top: 50%;
+            font-size: 40px;
+            margin-top: -20px;
+
+            .hero__info:nth-child(odd) & {
+                right: 100%;
+                padding-right: 20px;
+            }
+            .hero__info:nth-child(even) & {
+                left: 100%;
+                padding-left: 20px;
+            }
         }
     }
 }

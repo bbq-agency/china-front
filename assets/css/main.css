@@ -1431,11 +1431,8 @@ main {
 }
 
 .hero__info-container {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
-  padding: 0 80px;
+  padding: 20px 12% 0;
   box-sizing: border-box;
   z-index: 150;
 }
@@ -1444,6 +1441,21 @@ main {
   clear: both;
   content: "";
   display: table;
+}
+
+@media (min-width: 508px) {
+  .hero__info-container {
+    padding: 20px 10% 0;
+  }
+}
+
+@media (min-width: 1054px) {
+  .hero__info-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0px 12%;
+  }
 }
 
 .hero__info:nth-child(odd) {
@@ -1457,6 +1469,7 @@ main {
 }
 
 .hero__info-name {
+  text-align: center;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.52px;
@@ -1466,8 +1479,14 @@ main {
   margin-bottom: 10px;
 }
 
+@media (min-width: 754px) {
+  .hero__info-name {
+    text-align: inherit;
+  }
+}
+
 .hero__info-amount {
-  font-size: 35px;
+  font-size: 20px;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.07px;
   color: #f1f9c7;
@@ -1475,22 +1494,33 @@ main {
   position: relative;
 }
 
+@media (min-width: 508px) {
+  .hero__info-amount {
+    font-size: 35px;
+  }
+}
+
 .hero__info-icon {
-  text-shadow: 0 0 5px #fe0000, 0 0 10px #fe0000, 0 0 10px #fe0000;
-  position: absolute;
-  top: 50%;
-  font-size: 40px;
-  margin-top: -20px;
+  display: none;
 }
 
-.hero__info:nth-child(odd) .hero__info-icon {
-  right: 100%;
-  padding-right: 20px;
-}
-
-.hero__info:nth-child(even) .hero__info-icon {
-  left: 100%;
-  padding-left: 20px;
+@media (min-width: 754px) {
+  .hero__info-icon {
+    display: block;
+    text-shadow: 0 0 5px #fe0000, 0 0 10px #fe0000, 0 0 10px #fe0000;
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    margin-top: -20px;
+  }
+  .hero__info:nth-child(odd) .hero__info-icon {
+    right: 100%;
+    padding-right: 20px;
+  }
+  .hero__info:nth-child(even) .hero__info-icon {
+    left: 100%;
+    padding-left: 20px;
+  }
 }
 
 .dropdown-select {
