@@ -24,6 +24,36 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-notifications:before {
+    content: "\e927";
+}
+.icon-500:before {
+    content: "\e928";
+}
+.icon-404:before {
+    content: "\e929";
+}
+.icon-radio-bullet:before {
+    content: "\e918";
+}
+.icon-uniE916:before {
+    content: "\e916";
+}
+.icon-uniE917:before {
+    content: "\e917";
+}
+.icon-uniE912:before {
+    content: "\e912";
+}
+.icon-uniE913:before {
+    content: "\e913";
+}
+.icon-radio:before {
+    content: "\e90f";
+}
+.icon-uniE910:before {
+    content: "\e910";
+}
 .icon-pokers:before {
     content: "\e919";
 }
@@ -81,35 +111,14 @@
 .icon-checked:before {
     content: "\e90e";
 }
-.icon-radio:before {
-    content: "\e90f";
-}
-.icon-uniE910:before {
-    content: "\e910";
-}
 .icon-gamburger:before {
     content: "\e911";
-}
-.icon-uniE912:before {
-    content: "\e912";
-}
-.icon-uniE913:before {
-    content: "\e913";
 }
 .icon-all-games:before {
     content: "\e914";
 }
 .icon-dashboard:before {
     content: "\e915";
-}
-.icon-uniE916:before {
-    content: "\e916";
-}
-.icon-uniE917:before {
-    content: "\e917";
-}
-.icon-radio-bullet:before {
-    content: "\e918";
 }
 .icon-flag:before {
     content: "\e91a";

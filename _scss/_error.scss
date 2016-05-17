@@ -1,0 +1,52 @@
+.error {
+    padding: 125px 0 100px;
+    background: url(../img/bg.jpg) no-repeat top center;
+    text-align: center;
+    background-size: cover;
+
+    p {
+        color: #f1f9c7;
+        text-shadow: 0 0 5px #ff0000, 0 0 5px #ff0000, 0 0 5px #ff0000;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin: 0 0 30px;
+
+        @include media(S) {
+            font-size: 24px;
+            letter-spacing: 3.6px;
+            margin: 0 0 45px;
+        }
+
+        [class^="icon-"] {
+            font-size: 260px;
+            line-height: 90px;
+            vertical-align: middle;
+
+            @include media(S) {
+                font-size: 360px;
+                line-height: 120px;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    &__btn-wrap{
+        margin-top: 60px;
+
+        @include media(S) {
+            margin-top: 75px;
+        }
+    }
+
+    &__btn--primary {
+        @include btn;
+        @include btn--primary;
+        margin-right: 20px;
+    }
+
+    &__btn--ghost {
+        @include btn;
+        @include btn--ghost;
+    }
+}

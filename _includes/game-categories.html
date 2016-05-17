@@ -1,8 +1,8 @@
 <div class="game-categories">
 
-    <div class="js-game-categories-easytabs">
+    <div class=" ">
 
-        <ul class="game-categories__list">
+        <!-- <ul class="game-categories__list">
             <li class="game-categories__item">
                 <a href="#top-lists" class="game-categories__link">
                     <span class="icon-flag"></span>
@@ -38,19 +38,19 @@
         <form class="game-categories__form">
             <span class="icon-search"></span>
             <input class="game-categories__input" type="text" placeholder="Live search for games">
-        </form>
+        </form> -->
 
         <div id="top-lists" class="game-list">
             <div class="game-list__wrap">
                 {% assign games = site.categories.games %}
-                {% for i in games limit: 18 %}
+                {% for i in games limit: 15 %}
                     {% include game-list__item.html %}
                 {% endfor %}
             </div>
             <a href="#" class="game-list__btn">All Games</a>
         </div>
 
-        <div id="cards" class="game-list">
+        <!-- <div id="cards" class="game-list">
             <div class="game-list__wrap">
                 {% assign games = site.categories.games | where: "game-type", "cards" %}
                 {% for i in games limit: 18 %}
@@ -88,7 +88,7 @@
                 {% endfor %}
             </div>
             <a href="#" class="game-list__btn">All Games</a>
-        </div>
+        </div> -->
 
     </div>
 

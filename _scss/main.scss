@@ -16,23 +16,20 @@
 
 // UX
 @import 'base';
-// @import 'header';
-@import 'mainnav';
-// @import 'hero';
-@import 'hero2';
-@import 'dropdown';
-@import 'flag-holder';
-@import "auth";
-@import 'main-nav';
-@import "buttons";
-@import "features2";
+@import 'header';
+@import 'hero';
+@import "features";
 @import 'banner-games';
-@import 'game-promo2';
+@import 'game-promo';
 @import 'game-categories';
 @import 'game-list';
+@import 'game-filter';
+@import 'game-hall';
 @import 'winners';
 @import 'payment';
-@import 'footer2';
+@import 'footer';
+@import 'nav-lang';
+@import 'nav-social';
 @import 'afterfooter';
 @import 'popups/popups';
 @import 'popups/social-signin';
@@ -40,4 +37,7 @@
 @import 'popups/popup-question';
 @import 'popups/choose-currency';
 @import 'popups/choose-gift';
-
+@import 'error';
+@import 'page';
+@import 'sidebar';
+@import 'primary-nav';

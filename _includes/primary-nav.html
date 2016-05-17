@@ -1,0 +1,86 @@
+<nav class="primary-nav">
+    <div class="primary-nav__sidebar js-nav-sidebar">
+        {% if site.authorized == true %}
+        <div class="primary-nav__panel">
+            <div class="primary-nav__user">
+                <img class="primary-nav__user-img" src="/assets/img/users/user2.jpg">
+                <span class="primary-nav__user-name">John Doe</span>
+                <span class="primary-nav__user-balance">$3 994 432</span>
+            </div>
+            <div class="primary-nav__control">
+                <a class="primary-nav__control-btn" href="#">
+                    <i class="icon icon-star-bordered"></i>
+                </a>
+                <a class="primary-nav__control-btn" href="#">
+                    <i class="icon icon-notifications"></i>
+                    <span class="primary-nav__control-counter">2</span>
+                </a>
+                <a class="primary-nav__control-btn" href="#">
+                    <i class="icon icon-headset"></i>
+                </a>
+                <a class="primary-nav__control-deposit" href="#">Deposit</a>
+            </div>
+            <div class="primary-nav__favorites">
+            {% if site.favorites == true %}
+                <div class="primary-nav__favorites-header">
+                    <div class="primary-nav__favorites-title">
+                        Favorites 
+                        <span class="primary-nav__favorites-amount">35</span>
+                    </div>
+                    <a class="primary-nav__favorites-btn"  href="#">Viev all</a>
+                </div>
+                <div class="primary-nav__favorites-list js-slick-fav ">
+                    <div class="primary-nav__favorites-item">
+                        <a href=""><img class="primary-nav__favorites-img" src="/assets/img/games/iron-man.jpeg" alt=""></a>
+                    </div>
+                    <div class="primary-nav__favorites-item">
+                        <a href=""><img class="primary-nav__favorites-img" src="/assets/img/games/iron-man.jpeg" alt=""></a>
+                    </div>
+                    <div class="primary-nav__favorites-item">
+                        <a href=""><img class="primary-nav__favorites-img" src="/assets/img/games/iron-man.jpeg" alt=""></a>
+                    </div>
+                    <div class="primary-nav__favorites-item">
+                        <a href=""><img class="primary-nav__favorites-img" src="/assets/img/games/iron-man.jpeg" alt=""></a>
+                    </div>
+                </div>
+                {% else %}
+                <div class="primary-nav__favorites-header">
+                    <div class="primary-nav__favorites-title">
+                        Favorites <span class="primary-nav__favorites-amount">0</span>
+                    </div>
+                </div>
+                <div class="primary-nav__favorites-null">
+                    <p class="primary-nav__favorites-null-text">Add games to your Favorites simply from Game Hall Page</p>
+                    <a class="primary-nav__favorites-null-btn"  href="#">Game Hall</a>
+                    <img class="primary-nav__favorites-null-bg" src="/assets/img/fav_null.png" alt="">
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        {% else %}
+        <div class="primary-nav__panel primary-nav__panel--unauth">
+            <a href="" class="primary-nav__panel-login">Login</a>
+            <a href="" class="primary-nav__panel-signup">Sign Up</a>
+        </div>
+        {% endif %}
+        <ul class="primary-nav__main">
+            <li><a class="primary-nav--current" href="#"><i class="icon icon-dashboard"></i> Dashboard</a></li>
+            <li>
+                <a class="js-nav-sub-btn" href="#"><i class="icon icon-all-games"></i> All games</a>
+                <ul class="primary-nav__sub js-nav-sub">
+                    <li><a href="#"><i class="icon icon-dashboard"></i> Top lists</a></li>
+                    <li><a href="#"><i class="icon icon-cards"></i> Cards</a></li>
+                    <li><a href="#"><i class="icon icon-slots"></i> Slots</a></li>
+                    <li><a href="#"><i class="icon icon-roulette"></i> Pokers</a></li>
+                    <li><a href="#"><i class="icon icon-roulette"></i> Roulette</a></li>
+                    <li><a href="#"><i class="icon icon-dashboard"></i> Other</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="icon icon-dashboard"></i> Promo</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Banking info</a></li>
+        </ul>
+        <a href="#" class="primary-nav__close js-nav-close"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="primary-nav__overlay js-nav-overlay"></div>
+</nav>

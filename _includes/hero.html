@@ -1,38 +1,30 @@
 <div class="hero">
 
-    <div class="hero__title">WELCOME TO THE BEST ONLINE CASINO</div>
-    <div class="hero__jackpot">
+    <div class="hero__title">Welcome to the best online casino</div>
 
-        <div class="hero__jackpot-titles">
-            <div class="hero__jackpot-title">jackpot</div>
-            <div class="hero__jackpot-bank">$24 852 150</div>
-        </div>
+    <div class="hero__wrapper">
 
-        <div class="hero__img-wrapper">
-            <img src="{{ site.baseurl }}/assets/img/hero/hero-decor.png" alt="" class="hero__img">
-        </div>
-    </div>
-
-    <a href="#" class="hero__btn-play">
-        <img class="hero__btn-img" src="{{ site.baseurl }}/assets/img/hero/btn-play.png">
-        <span class="hero__btn-text">play</span>
-    </a>
-
-    <div class="hero__info">
-        <div class="hero__info-left">
-            <div class="hero__info-title">all players</div>
-            <div class="hero__info-content">
-                <span class="hero__info-sum">$485 501</span>
-                <span class="hero__info-icon icon-players"></span>
+        <div class="hero__jackpot-container">
+            <div class="hero__jackpot">
+                <div class="hero__jackpot-title">Jackpot</div>
+                <div class="hero__jackpot-amount">$24 852 150</div>
+            </div>
+            <div class="hero__btn-container">
+                <a href="javasript:void(0)" class="hero__btn">Play</a>
             </div>
         </div>
-        <div class="hero__info-right">
-            <div class="hero__info-title">total win</div>
-            <div class="hero__info-content">
-                <span class="hero__info-icon icon-total-win"></span>
-                <span class="hero__info-sum">$14 650 242</span>
-            </div>
+
+        <div class="hero__info-container">
+            {% assign hero = site.data.hero %}
+            {% for i in hero %}
+                <div class="hero__info">
+                    <div class="hero__info-name">{{ i.name }}</div>
+                    <div class="hero__info-amount"><span class="hero__info-icon icon-{{ i.icon }}"></span> {{ i.amount }}</div>
+                </div>
+            {% endfor %}
         </div>
+
     </div>
 
+    {% include features.html %}
 </div>

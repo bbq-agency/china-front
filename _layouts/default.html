@@ -19,7 +19,8 @@
     <main>
         {{ content }}
     </main>
-
+    
+    {% include primary-nav.html %}
     {% include popups/PopupSignIn.html %}
     {% include popups/PopupSignUp.html %}
     {% include popups/PopupSignUpPhoneConfirm.html %}
@@ -28,11 +29,7 @@
     {% include popups/PopupForgotStepTwo.html %}
     {% include popups/PopupForgotStepThree.html %}
 
-    <script src="{{ site.baseurl }}/assets/js/vendor/jquery-1.11.3.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/vendor/slick.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/vendor/jquery.easytabs.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/vendor/remodal.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+    <script src="{{ site.baseurl }}/assets/app/all.min.js"></script>
 
     <!-- not for prod -->
     <style>
@@ -60,10 +57,10 @@
         }
     </style>
     <div class="not-for-prod">
-        <div><a href="{{ site.baseurl }}/" class="a {% if page.url == '/' %}selected{% endif %}">index</a></div>
+        <div><a href="{{ site.baseurl }}/" class="a {% if page.url == '/' %}selected{% endif %}">Landing</a></div>
         {% assign pages = site.posts | where: "type", "page" | sort: 'title' %}
         {% for i in pages %}
-        <div><a href="{{ site.baseurl }}{{ i.permalink }}" class="a {% if page.url contains i.id %}selected{% endif %}">{{ i.id }}</a></div>
+        <div><a href="{{ site.baseurl }}{{ i.permalink }}" class="a {% if page.url contains i.id %}selected{% endif %}">{{ i.title }}</a></div>
         {% endfor %}
         <br>
         <div><span style="color: #fff;">Popups:</span></div>

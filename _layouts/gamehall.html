@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<div class="page">
+    {% include game-filter.html %}
+    <div class="page__left">
+        <h2 class="game-hall__title" id="cards"><span class="icon icon-cards"></span> Cards</h2>
+        {% include game-hall.html %}
+        <h2 class="game-hall__title" id="slots"><span class="icon icon-slots"></span> Slots</h2>
+        {% include game-hall.html %}
+        <h2 class="game-hall__title" id="pokers"><span class="icon icon-pokers"></span> Pokers</h2>
+        {% include game-hall.html %}
+        {{ content }}
+    </div>
+    {% include sidebar.html %}
+</div>
+
+{% include banner-games.html %}
+{% include winners.html %}
+{% include payment.html %}
+{% include footer.html %}
+{% include afterfooter.html %}

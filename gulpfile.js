@@ -61,18 +61,15 @@ gulp.task('sass', function () {
 /* Js */
 gulp.task('jsConcat', function() {
     return gulp.src([
-            'assets/js/lib/*',
             'assets/js/vendor/*',
-            'assets/js/requirejs/*',
             'assets/js/common/*'
         ])
-        .pipe(concat('all.js'))
+        .pipe(concat('all.min.js'))
         .pipe(gulp.dest('assets/app'));
 });
 
 gulp.task('jsMin', ['jsConcat'], function() {
-    return gulp.src(['assets/app/all.js'])
-        .pipe(concat('all.min.js'))
+    return gulp.src(['assets/app/all.min.js'])
         .pipe(uglify())
         .pipe(gulp.dest('assets/app'));
 });

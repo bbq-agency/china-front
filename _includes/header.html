@@ -1,148 +1,39 @@
-<header class="header">
+<header class="header js-header">
 
-    <div class="main-nav">
+    <nav class="header__nav">
+        <a class="header__nav-link js-nav-primary" href="#"><span class="icon-gamburger"></span> Menu</a>
+        <a class="header__nav-link" href="#"><span class="icon-dashboard"></span> Dashboard</a>
+        <a class="header__nav-link" href="/gamehall/"><span class="icon-all-games"></span> All Games</a>
+    </nav>
 
-        <div class="main-nav__item">
-            <a href="#" class="main-nav__link">
-                <span class="icon icon-gamburger"></span>
-                <span class="main-nav__text">menu</span>
-            </a>
-        </div>
-
-        <div class="main-nav__item visible-ib-desktop">
-            <a href="#" class="main-nav__link">
-                <span class="icon icon-dashboard"></span>
-                <span class="main-nav__text">dashboard</span>
-            </a>
-        </div>
-
-        <div class="main-nav__item visible-ib-desktop">
-            <a href="#" class="main-nav__link">
-                <span class="icon icon-all-games"></span>
-                <span class="main-nav__text">all games</span>
-            </a>
-        </div>
-
-    </div>
-
-    <a href="#" class="logo" style="max-width:150px;display:inline-block;">
-        <img style="width:100%;" src="{{ site.baseurl }}/assets/img/logo.png" alt="">
+    <a class="header__logo" href="{{ site.baseurl }}/">
+        <img class="header__logo-img" src="{{ site.baseurl }}/assets/img/logo.png" alt="Logo">
     </a>
 
-    <div class="auth">
-
-        <div class="dropdown-select dropdown-select__lang">
-
-            <a href="#" class="dropdown-select__toggle">
-                <span class="flag-holder flag-holder__selected">
-                    <img class="flag-holder-img flag-holder-img__selected" src="{{ site.baseurl }}/assets/img/header-nav/flag-sample.png">
-
-                    <span class="dropdown-select__selected-text">en</span>
-                </span>
-
-                <span class="icon-arrow-down dropdown-select__state"></span>
-
-            </a>
-
-            <div class="dropdown-select__list">
-
-                <div class="dropdown-select__triangle"></div>
-
-                <div class="dropdown-select__item">
-                    <a href="#" class="dropdown-select__link">
-                        <span class="flag-holder"></span>
-                        <span class="dropdown-select__list-text">item</span>
-                    </a>
+    <div class="header__panel">
+        {% if site.authorized == true %}
+            <div class="header__profile">
+                <div class="header__user">
+                    <img class="header__user-img" src="/assets/img/users/user2.jpg">
+                    <span class="header__user-name">John Doe</span>
+                    <span class="header__user-balance">$3 994 432</span>
                 </div>
-
-                <div class="dropdown-select__item">
-                    <a href="#" class="dropdown-select__link">
-                        <span class="flag-holder">
-                            <img src="{{ site.baseurl }}/assets/img/header-nav/flag-sample.png">
-                        </span>
-                        <span class="dropdown-select__list-text">item</span>
-                    </a>
+                <div class="header__contlols">
+                    <a href="#" class="header__contlols-btn"><i class="icon icon-star-bordered"></i></a>
+                    <a href="#" class="header__contlols-btn"><i class="icon icon-notifications"></i></a>
+                    <a href="#" class="header__contlols-help"><i class="icon icon-headset"></i> Support</a>
+                    <a href="#" class="header__contlols-deposit">Deposit</a>
                 </div>
-
-                <div class="dropdown-select__item">
-                    <a href="#" class="dropdown-select__link">
-                        <span class="flag-holder">
-                            <img src="{{ site.baseurl }}/assets/img/header-nav/flag-sample.png">
-                        </span>
-                        <span class="dropdown-select__list-text">item</span>
-                    </a>
-                </div>
-
-                <div class="dropdown-select__item">
-                    <a href="#" class="dropdown-select__link dropdown-select__link--active">
-                        <span class="flag-holder"></span>
-                        <span class="dropdown-select__list-text">item</span>
-                    </a>
-                </div>
-
             </div>
+        {% else %}
+            <nav class="header__control">
+                {% include nav-lang.html class='nav-lang--mainmenu' %}
+                <a href="#" class="header__control-login">Login</a>
+                <a href="#" class="header__control-signup">Sign Up</a>
+                {% include nav-social.html class='nav-social--header' %}
+            </nav>
+        {% endif %}
 
-        </div>
-
-        <a class="btn btn--base">login</a>
-
-        <a class="btn btn--accent">sign up</a>
-
-        <div class="header__social">
-
-            <span class="header__social-title">or</span>
-
-            <div class="header__social-item"></div>
-
-            <div class="header__social-item"></div>
-
-            <div class="dropdown-select">
-
-                <a href="#" class="dropdown-select__toggle dropdown-select__toggle-social">
-                    <span class="dropdown-select__state">
-                        <span class="icon-arrow-down"></span>
-                    </span>
-                </a>
-
-                <div class="dropdown-select__list">
-
-                    <div class="dropdown-select__triangle"></div>
-
-                    <div class="dropdown-select__item">
-                        <a href="#" class="dropdown-select__link">
-                            <span class="flag-holder"></span>
-                            <span class="dropdown-select__list-text">item</span>
-                        </a>
-                    </div>
-
-                    <div class="dropdown-select__item">
-                        <a href="#" class="dropdown-select__link">
-                            <span class="flag-holder"></span>
-                            <span class="dropdown-select__list-text">item</span>
-                        </a>
-                    </div>
-
-                    <div class="dropdown-select__item">
-                        <a href="#" class="dropdown-select__link">
-                            <span class="flag-holder"></span>
-                            <span class="dropdown-select__list-text">item</span>
-                        </a>
-                    </div>
-
-                    <div class="dropdown-select__item">
-                        <a href="#" class="dropdown-select__link dropdown-select__link--active">
-                            <span class="flag-holder"></span>
-                            <span class="dropdown-select__list-text">item</span>
-                        </a>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
     </div>
-
-    <div class="header-separate-line"></div>
 
 </header>
