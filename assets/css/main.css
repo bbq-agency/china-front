@@ -1429,7 +1429,6 @@ main {
   border-color: rgba(255, 255, 255, 0.4);
   transition: background-color .2s ease, border-color .2s ease;
   padding: 4px 17px;
-  padding: 4px 10px;
   font-size: 12px;
   vertical-align: top;
 }
@@ -1442,12 +1441,6 @@ main {
 .header__control-login:active {
   background-color: #4D4D4D;
   border-color: #4D4D4D;
-}
-
-@media (min-width: 508px) {
-  .header__control-login {
-    padding: 4px 22px;
-  }
 }
 
 .header__control-signup {
@@ -1466,7 +1459,6 @@ main {
   box-shadow: 0 0 10px #fe0000, 0 0 10px #fe0000;
   transition: box-shadow .2s ease;
   padding: 4px 17px;
-  padding: 4px 10px;
   font-size: 12px;
   vertical-align: top;
 }
@@ -1477,12 +1469,6 @@ main {
 
 .header__control-signup:active {
   box-shadow: 0 0 10px #fe0000;
-}
-
-@media (min-width: 508px) {
-  .header__control-signup {
-    padding: 4px 22px;
-  }
 }
 
 .header__user {
@@ -2403,19 +2389,13 @@ main {
   padding: 0 2%;
   margin: 0;
   float: left;
-  width: 100%;
+  width: 75%;
 }
 
 .game-filter__list::after {
   clear: both;
   content: "";
   display: table;
-}
-
-@media (min-width: 754px) {
-  .game-filter__list {
-    width: 75%;
-  }
 }
 
 .game-filter__item {
@@ -2488,16 +2468,9 @@ main {
 }
 
 .game-filter__search {
-  display: none;
   float: right;
   padding-top: 35px;
   width: 25%;
-}
-
-@media (min-width: 754px) {
-  .game-filter__search {
-    display: block;
-  }
 }
 
 .game-filter__input {
@@ -2505,6 +2478,7 @@ main {
   border: 1px solid #474747;
   border-radius: 100px;
   padding: 0 20px 0 40px;
+  width: 187px;
   height: 40px;
   font-size: 14px;
   outline: none;
@@ -2513,10 +2487,6 @@ main {
 
 .game-filter__input-wrapper {
   position: relative;
-  float: right;
-  padding-right: 7%;
-  width: 100%;
-  max-width: 250px;
 }
 
 .game-filter__input-wrapper:before {
@@ -2717,53 +2687,6 @@ main {
   font-size: 16px;
   text-shadow: 0 0 10px #fe0000, 0 0 10px #fe0000;
   color: #fe0000;
-}
-
-.game-hall--landing .game-hall__item {
-  width: 50%;
-}
-
-.game-hall--landing .game-hall__item:nth-child(1) {
-  width: 100%;
-}
-
-@media (min-width: 754px) {
-  .game-hall--landing .game-hall__item {
-    width: 33.3333%;
-  }
-  .game-hall--landing .game-hall__item:nth-child(1) {
-    width: 66.6666%;
-  }
-}
-
-@media (min-width: 1054px) {
-  .game-hall--landing .game-hall__item {
-    width: 25%;
-  }
-  .game-hall--landing .game-hall__item:nth-child(1) {
-    width: 50%;
-  }
-  .game-hall--landing .game-hall__item:nth-child(14) {
-    display: none;
-  }
-  .game-hall--landing .game-hall__item:nth-child(15) {
-    display: none;
-  }
-}
-
-@media (min-width: 1300px) {
-  .game-hall--landing .game-hall__item {
-    width: 16.6666%;
-  }
-  .game-hall--landing .game-hall__item:nth-child(1) {
-    width: 33.33333%;
-  }
-  .game-hall--landing .game-hall__item:nth-child(14) {
-    display: block;
-  }
-  .game-hall--landing .game-hall__item:nth-child(15) {
-    display: block;
-  }
 }
 
 .winners {
