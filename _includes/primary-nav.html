@@ -3,7 +3,7 @@
         {% if site.authorized == true %}
         <div class="primary-nav__panel">
             <div class="primary-nav__user">
-                <img class="primary-nav__user-img" src="/assets/img/users/user2.jpg">
+                <img class="primary-nav__user-img" src="{{ site.baseurl }}/assets/img/users/user2.jpg">
                 <span class="primary-nav__user-name">John Doe</span>
                 <span class="primary-nav__user-balance">$3 994 432</span>
             </div>
@@ -31,16 +31,16 @@
                 </div>
                 <div class="primary-nav__favorites-list js-slick-fav ">
                     <div class="primary-nav__favorites-item">
-                        <a href=""><img class="primary-nav__favorites-img" src="/assets/img/games/iron-man.jpeg" alt=""></a>
+                        <a href=""><img class="primary-nav__favorites-img" src="{{ site.baseurl }}/assets/img/games/iron-man.jpeg" alt=""></a>
                     </div>
                     <div class="primary-nav__favorites-item">
-                        <a href=""><img class="primary-nav__favorites-img" src="/assets/img/games/iron-man.jpeg" alt=""></a>
+                        <a href=""><img class="primary-nav__favorites-img" src="{{ site.baseurl }}/assets/img/games/iron-man.jpeg" alt=""></a>
                     </div>
                     <div class="primary-nav__favorites-item">
-                        <a href=""><img class="primary-nav__favorites-img" src="/assets/img/games/iron-man.jpeg" alt=""></a>
+                        <a href=""><img class="primary-nav__favorites-img" src="{{ site.baseurl }}/assets/img/games/iron-man.jpeg" alt=""></a>
                     </div>
                     <div class="primary-nav__favorites-item">
-                        <a href=""><img class="primary-nav__favorites-img" src="/assets/img/games/iron-man.jpeg" alt=""></a>
+                        <a href=""><img class="primary-nav__favorites-img" src="{{ site.baseurl }}/assets/img/games/iron-man.jpeg" alt=""></a>
                     </div>
                 </div>
                 {% else %}
@@ -52,7 +52,7 @@
                 <div class="primary-nav__favorites-null">
                     <p class="primary-nav__favorites-null-text">Add games to your Favorites simply from Game Hall Page</p>
                     <a class="primary-nav__favorites-null-btn"  href="#">Game Hall</a>
-                    <img class="primary-nav__favorites-null-bg" src="/assets/img/fav_null.png" alt="">
+                    <img class="primary-nav__favorites-null-bg" src="{{ site.baseurl }}/assets/img/fav_null.png" alt="">
                 </div>
                 {% endif %}
             </div>

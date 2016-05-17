@@ -3,7 +3,7 @@
     <nav class="header__nav">
         <a class="header__nav-link js-nav-primary" href="#"><span class="icon-gamburger"></span> Menu</a>
         <a class="header__nav-link" href="#"><span class="icon-dashboard"></span> Dashboard</a>
-        <a class="header__nav-link" href="/gamehall/"><span class="icon-all-games"></span> All Games</a>
+        <a class="header__nav-link" href="{{ site.baseurl }}/gamehall/"><span class="icon-all-games"></span> All Games</a>
     </nav>
 
     <a class="header__logo" href="{{ site.baseurl }}/">
@@ -14,7 +14,7 @@
         {% if site.authorized == true %}
             <div class="header__profile">
                 <div class="header__user">
-                    <img class="header__user-img" src="/assets/img/users/user2.jpg">
+                    <img class="header__user-img" src="{{ site.baseurl }}/assets/img/users/user2.jpg">
                     <span class="header__user-name">John Doe</span>
                     <span class="header__user-balance">$3 994 432</span>
                 </div>
