@@ -16,6 +16,7 @@ $(document).ready(function () {
     });
 
     $(".js-nav-sub-btn").on('click', function(event) {
+        $(this).toggleClass('is-open');
         $(".js-nav-sub").slideToggle();
         event.preventDefault();
     });
