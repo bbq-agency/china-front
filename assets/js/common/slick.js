@@ -1,25 +1,24 @@
+/**
+ * slick
+ * https://github.com/kenwheeler/slick
+ */
 $(document).ready(function () {
 
-    /**
-     * slick
-     * https://github.com/kenwheeler/slick
-     */
+    // Recent Activity
     $('.js-winners-slick').slick({
         dots: false,
         arrows: false,
         infinite: true,
         speed: 400,
-        // fade: true,
         cssEase: 'ease',
-        // centerMode: true,
-        // centerPadding: '20%',
         slidesToShow: 2,
         slidesToScroll: 1,
         lazyLoad: 'progressive',
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 5000,
+        pauseOnHover: true,
         variableWidth: true,
-        // swipeToSlide: true,
+        swipeToSlide: true,
         mobileFirst: true,
         responsive: [
             {
@@ -44,7 +43,6 @@ $(document).ready(function () {
     });
 
     // Slick Sidebar
-
     $('.js-slick-fav').slick({
         autoplaySpeed: 300,
         slidesToShow: 2,
@@ -55,53 +53,41 @@ $(document).ready(function () {
     });
 
     // Slick Filter
-
     $('.js-slick-filter').slick({
         autoplaySpeed: 300,
         slidesToShow: 2,
         slidesToScroll: 1,
         infinite: false,
         mobileFirst: true,
+        variableWidth: true,
         responsive: [
             {
-                breakpoint: 508,
+                breakpoint: 320,
                 settings: {
-                    slidesToShow: 3
+                    slidesToShow: 2
                 }
             },
             {
-                breakpoint: 754,
+                breakpoint: 1300,
                 settings: {
-                    slidesToShow: 4
-                }
-            },
-            {
-                breakpoint: 1054,
-                settings: {
+                    variableWidth: true,
                     slidesToShow: 7
                 }
             }
         ]
     });
 
-    //
-
+    // Надо бы переназвать
     $('.js-slider-slick').slick({
-        slidesToShow: 5,
+        slidesToShow: 7,
         slidesToScroll: 1,
         dots: false,
         infinite: true,
         speed: 300,
-        // fade: true,
         cssEase: 'ease',
-        // centerMode: true,
-        // centerPadding: '20%',
         lazyLoad: 'progressive',
         autoplay: true,
         autoplaySpeed: 3500,
-        // variableWidth: true,
-        // swipeToSlide: true,
-        // mobileFirst: true,
         responsive: [
             {
                 breakpoint: 322,
@@ -110,9 +96,8 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 1300,
+                breakpoint: 1792,
                 settings: {
-                    slidesToShow: 5,
                     variableWidth: true,
                 }
             }

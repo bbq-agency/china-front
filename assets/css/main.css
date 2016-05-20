@@ -1337,7 +1337,7 @@ main {
   left: 0;
   padding: 0;
   width: 100%;
-  height: 128px;
+  height: 125px;
   text-align: center;
   z-index: 1000;
   transition: background .3s ease;
@@ -1375,8 +1375,10 @@ main {
   display: block;
 }
 
-.header__nav-link:first-child div {
-  display: inline-block;
+@media (min-width: 754px) {
+  .header__nav-link:first-child {
+    display: none;
+  }
 }
 
 @media (min-width: 754px) {
@@ -1398,17 +1400,11 @@ main {
 }
 
 .header__nav-item {
-  display: none;
-}
-
-@media (min-width: 1300px) {
-  .header__nav-item {
-    display: inline-block;
-  }
+  display: inline-block;
 }
 
 .header__logo {
-  max-width: 195px;
+  max-width: 125px;
   margin: 0 auto;
   position: absolute;
   left: 50%;
@@ -1416,6 +1412,14 @@ main {
   -webkit-transform: translate3d(-50%, 0, 0);
           transform: translate3d(-50%, 0, 0);
   z-index: 180;
+  padding: 10px 0;
+}
+
+@media (min-width: 1054px) {
+  .header__logo {
+    max-width: 195px;
+    padding: 0;
+  }
 }
 
 .header__logo-img {
@@ -1438,7 +1442,7 @@ main {
   .header__panel {
     padding: 0px;
     right: 15px;
-    top: 15px;
+    top: 20px;
     -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
             transform: translateX(0);
@@ -1488,9 +1492,10 @@ main {
   border-color: rgba(255, 255, 255, 0.4);
   transition: background-color .2s ease, border-color .2s ease;
   padding: 4px 17px;
-  padding: 4px 10px;
+  padding: 4px 15px;
   font-size: 12px;
   vertical-align: top;
+  margin: 0 7px;
 }
 
 .header__control-login:hover {
@@ -1501,12 +1506,6 @@ main {
 .header__control-login:active {
   background-color: #4D4D4D;
   border-color: #4D4D4D;
-}
-
-@media (min-width: 508px) {
-  .header__control-login {
-    padding: 4px 22px;
-  }
 }
 
 .header__control-signup {
@@ -1525,7 +1524,7 @@ main {
   box-shadow: 0 0 10px #fe0000, 0 0 10px #fe0000;
   transition: box-shadow .2s ease;
   padding: 4px 17px;
-  padding: 4px 10px;
+  padding: 4px 15px;
   font-size: 12px;
   vertical-align: top;
 }
@@ -1536,12 +1535,6 @@ main {
 
 .header__control-signup:active {
   box-shadow: 0 0 10px #fe0000;
-}
-
-@media (min-width: 508px) {
-  .header__control-signup {
-    padding: 4px 22px;
-  }
 }
 
 .header__user {
@@ -1602,7 +1595,7 @@ main {
   padding: 4px 17px;
   padding: 4px 5px;
   font-size: 13px;
-  display: none;
+  margin-right: 10px;
 }
 
 .header__contlols-help:hover {
@@ -1618,30 +1611,6 @@ main {
 .header__contlols-help .icon {
   font-size: 18px;
   vertical-align: middle;
-}
-
-@media (min-width: 508px) {
-  .header__contlols-help {
-    display: inline-block;
-  }
-}
-
-@media (min-width: 754px) {
-  .header__contlols-help {
-    display: none;
-  }
-}
-
-@media (min-width: 1054px) {
-  .header__contlols-help {
-    display: inline-block;
-  }
-}
-
-@media (min-width: 1300px) {
-  .header__contlols-help {
-    padding: 4px 10px;
-  }
 }
 
 .header__contlols-help span {
@@ -1670,7 +1639,7 @@ main {
   box-shadow: 0 0 10px #fe0000, 0 0 10px #fe0000;
   transition: box-shadow .2s ease;
   padding: 4px 17px;
-  padding: 4px 15px;
+  padding: 4px 5px;
   font-size: 13px;
 }
 
@@ -1680,6 +1649,25 @@ main {
 
 .header__contlols-deposit:active {
   box-shadow: 0 0 10px #fe0000;
+}
+
+.header__contlols-deposit span {
+  display: none;
+}
+
+@media (min-width: 1300px) {
+  .header__contlols-deposit span {
+    display: inline-block;
+  }
+}
+
+.header__contlols-deposit [class^="icon-"] {
+  font-size: 18px;
+  vertical-align: middle;
+  display: inline-block;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .header__contlols-btn {
@@ -1697,6 +1685,7 @@ main {
   vertical-align: bottom;
   color: #fff;
   transition: background-color .2s ease, border-color .2s ease;
+  margin-right: 10px;
 }
 
 .header__contlols-btn:hover {
@@ -1860,6 +1849,8 @@ main {
 
 .hero__info-container {
   width: 100%;
+  max-width: 1792px;
+  margin: auto;
   padding: 20px 12% 0;
   box-sizing: border-box;
   z-index: 150;
@@ -1882,6 +1873,7 @@ main {
     position: absolute;
     bottom: 0;
     left: 0;
+    right: 0;
     padding: 0px 12%;
   }
 }
@@ -1953,6 +1945,8 @@ main {
 
 .features {
   padding: 60px 30px 0px;
+  margin: 0 auto;
+  max-width: 1792px;
 }
 
 .features::after {
@@ -2071,6 +2065,14 @@ main {
   .banner-games__item:nth-child(1) {
     width: 66.66666%;
     padding-bottom: 40.33872%;
+    position: relative;
+  }
+}
+
+@media (min-width: 1300px) {
+  .banner-games__item:nth-child(1) {
+    width: 33.33333%;
+    padding-bottom: 20.16936%;
     position: relative;
   }
 }
@@ -2327,7 +2329,8 @@ main {
 }
 
 .game-list__wrap {
-  margin: 0 -8px 35px;
+  margin: 0 auto;
+  max-width: 1792px;
 }
 
 .game-list__wrap::after {
@@ -2492,12 +2495,19 @@ main {
 .game-filter {
   background: #0f0f0f;
   padding: 0 12px;
+  position: relative;
+  overflow: hidden;
 }
 
 .game-filter::after {
   clear: both;
   content: "";
   display: table;
+}
+
+.game-filter__container {
+  margin: 0 auto;
+  max-width: 1792px;
 }
 
 .game-filter__list {
@@ -2522,7 +2532,6 @@ main {
 
 @media (min-width: 754px) {
   .game-filter__list {
-    width: 75%;
     max-width: 700px;
   }
 }
@@ -2590,6 +2599,24 @@ main {
   color: #fff;
 }
 
+.game-filter__btn {
+  background: #ca1e10;
+  border-radius: 0 20px 20px 0;
+  display: none;
+  padding: 0 15px 0 10px;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  height: 40px;
+  line-height: 42px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.game-filter__btn.is-animated {
+  display: block;
+}
+
 .game-filter__form {
   width: 100%;
   max-width: 300px;
@@ -2621,7 +2648,7 @@ main {
 }
 
 .game-filter__search.is-animated {
-  width: 100%;
+  width: 90%;
 }
 
 .game-filter__input {
@@ -2636,9 +2663,12 @@ main {
   width: 100%;
   color: #fff;
   max-height: 40px;
+  background: #ca1e10;
+  border-color: #ca1e10;
   padding: 0 20px 0 40px;
   height: 40px;
   font-size: 14px;
+  transition: all .2s ease;
 }
 
 .game-filter__input::-webkit-input-placeholder {
@@ -2662,6 +2692,18 @@ main {
   border-color: #fff;
 }
 
+.is-animated .game-filter__input {
+  background: transparent;
+  border-color: #474747;
+}
+
+@media (min-width: 754px) {
+  .game-filter__input {
+    background: transparent;
+    border-color: #474747;
+  }
+}
+
 .game-filter__input-wrapper {
   position: relative;
   float: right;
@@ -2676,24 +2718,45 @@ main {
           transform: translate3d(0, 0, 0);
 }
 
+@media (min-width: 754px) {
+  .game-filter__input-wrapper {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
 .game-filter__input-wrapper [class^="icon-"] {
   position: absolute;
   top: 13px;
   left: 15px;
   font-size: 16px;
-  color: #fe0000;
+  color: #fff;
 }
 
 .game-filter .slick-arrow {
-  z-index: 1000;
+  z-index: 100;
+}
+
+.game-filter .slick-arrow:before {
+  font-family: 'icomoon' !important;
+  font-size: 26px;
+  color: #fff;
 }
 
 .game-filter .slick-next {
-  right: 2%;
+  right: -12px;
+}
+
+.game-filter .slick-next:before {
+  content: "\e92d";
 }
 
 .game-filter .slick-prev {
-  left: 2%;
+  left: -12px;
+}
+
+.game-filter .slick-prev:before {
+  content: "\e92c";
 }
 
 .game-hall {
@@ -2946,8 +3009,13 @@ main {
 
 @media (min-width: 754px) {
   .winners {
-    padding: 20px 0 25px 4%;
+    padding: 20px 0 25px 30px;
   }
+}
+
+.winners__container {
+  margin: 0 auto;
+  max-width: 1792px;
 }
 
 .winners__title {
@@ -3132,6 +3200,11 @@ main {
   display: table;
 }
 
+.footer__container {
+  margin: 0 auto;
+  max-width: 1792px;
+}
+
 .footer__menu {
   font-size: 0;
   margin-bottom: 35px;
@@ -3310,6 +3383,12 @@ main {
   border-color: #4D4D4D;
 }
 
+@media (min-width: 1054px) {
+  .nav-social__dropdown {
+    margin-right: 30px;
+  }
+}
+
 .nav-social__dropdown .icon {
   display: inline-block;
   height: 10px;
@@ -3370,11 +3449,13 @@ main {
 }
 
 .afterfooter {
-  text-align: center;
   background: #1a1a1a;
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.4);
   padding: 30px 5% 100px;
+  margin: 0 auto;
+  max-width: 1792px;
+  font-size: 12px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .popup {
@@ -4048,6 +4129,11 @@ main {
   .page:before {
     height: 65px;
   }
+}
+
+.page__container {
+  margin: 0 auto;
+  max-width: 1792px;
 }
 
 .page__left {
@@ -4858,6 +4944,8 @@ main {
   padding: 30px;
   padding-top: 65px;
   text-align: center;
+  margin: 0 auto;
+  max-width: 1792px;
 }
 
 .slider:before {
