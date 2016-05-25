@@ -21,13 +21,15 @@
 
     <nav class="header__nav">
         <a class="header__nav-link js-nav-primary" href="#">
-            <span class="icon-gamburger"></span>
+            <span class="icon-hamburger"></span>
             <div class="header__nav-item">Menu</div>
         </a>
-<!--         <a class="header__nav-link" href="#">
+        
+        <a class="header__nav-link" href="#">
             <span class="icon-dashboard"></span>
             <div class="header__nav-item">Dashboard</div>
-        </a> -->
+        </a>
+        
         <a class="header__nav-link" href="/gamehall/">
             <span class="icon-all-games"></span>
             <div class="header__nav-item">All Games</div>
@@ -53,16 +55,14 @@
                     <span class="header__user-balance">$3 994 432</span>
                 </div>
                 <div class="header__contlols">
-                    <a href="#" class="header__contlols-btn"><i class="icon icon-star-bordered"></i></a>
-                    <a href="#" class="header__contlols-btn"><i class="icon icon-notifications"></i></a>
+                    <a href="#" class="header__contlols-btn">
+                        <span class="icon-notifications"></span>
+                    </a>
                     <a href="#" class="header__contlols-help">
-                        <i class="icon icon-headset"></i>
-                        <span>Support</span>
+                        <span class="icon-headset"></span>
+                        <div>Support</div>
                     </a>
-                    <a href="#" class="header__contlols-deposit">
-                        <span class="icon-close"></span>
-                        <span>Deposit</span>
-                    </a>
+                    <a href="#" class="header__contlols-deposit">Deposit</a>
                 </div>
             </div>
         
@@ -75,7 +75,7 @@
 <div class="page">
     <div class="game-filter">
     <div class="game-filter__container">
-        <ul class="game-filter__list js-slick-filter">
+        <ul class="game-filter__list js-slick-filter js-game-filter-list">
             <li class="game-filter__item">
                 <a href="javascript:void(0)" class="game-filter__link">
                     <span class="icon-flag"></span>
@@ -108,15 +108,15 @@
             </li>
             <li class="game-filter__item">
                 <a href="javascript:void(0)" class="game-filter__link">
-                    <span class="icon-roulette"></span>
+                    <span class="icon-favorites"></span>
                     <div class="game-filter__item-title">Favoritess</div>
                 </a>
             </li>
         </ul>
-        <div class="game-filter__btn">
+        <div class="game-filter__btn js-game-filter-btn">
             <i class="icon icon-all-games"></i>
         </div>
-        <form class="game-filter__search" action="">
+        <form class="game-filter__search js-game-filter-search" action="">
             <div class="game-filter__input-wrapper js-search">
                 <span class="icon-search"></span>
                 <input class="game-filter__input" type="text" placeholder="Live">
@@ -206,7 +206,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/the-incredible-hulk.jpeg" alt="The Incredible Hulk Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -368,7 +382,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/safari-heat.png" alt="Safari Heat Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -530,7 +558,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/royal-treasures.jpg" alt="Royal Treasures Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -692,7 +734,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/pharaons-gold-3.png" alt="Pharaons Gold 3 Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -854,7 +910,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/lucky-ladys-charm.jpeg" alt="Lucky Lady's Charm Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -1016,7 +1086,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/king-of-cards.jpg" alt="King of cards Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -1178,7 +1262,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/king-kong.jpeg" alt="King Kong Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -1340,7 +1438,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/iron-man.jpeg" alt="Iron Man Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -1502,7 +1614,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/gonzos-quest.jpeg" alt="Gonzos Quest Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -1691,7 +1817,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/the-incredible-hulk.jpeg" alt="The Incredible Hulk Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -1853,7 +1993,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/safari-heat.png" alt="Safari Heat Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -2015,7 +2169,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/royal-treasures.jpg" alt="Royal Treasures Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -2177,7 +2345,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/pharaons-gold-3.png" alt="Pharaons Gold 3 Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -2339,7 +2521,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/lucky-ladys-charm.jpeg" alt="Lucky Lady's Charm Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -2501,7 +2697,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/king-of-cards.jpg" alt="King of cards Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -2663,7 +2873,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/king-kong.jpeg" alt="King Kong Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -2825,7 +3049,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/iron-man.jpeg" alt="Iron Man Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -2987,7 +3225,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/gonzos-quest.jpeg" alt="Gonzos Quest Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -3176,7 +3428,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/the-incredible-hulk.jpeg" alt="The Incredible Hulk Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -3338,7 +3604,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/safari-heat.png" alt="Safari Heat Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -3500,7 +3780,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/royal-treasures.jpg" alt="Royal Treasures Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -3662,7 +3956,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/pharaons-gold-3.png" alt="Pharaons Gold 3 Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -3824,7 +4132,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/lucky-ladys-charm.jpeg" alt="Lucky Lady's Charm Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -3986,7 +4308,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/king-of-cards.jpg" alt="King of cards Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -4148,7 +4484,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/king-kong.jpeg" alt="King Kong Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -4310,7 +4660,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/iron-man.jpeg" alt="Iron Man Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -4472,7 +4836,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/gonzos-quest.jpeg" alt="Gonzos Quest Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -4810,6 +5188,20 @@
     
         
     
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
 
 </div>
 
@@ -4944,7 +5336,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="winners__user-pic" data-lazy="/assets/img/users/user1.png" alt="Bacon Titties Avatar">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -5109,7 +5515,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="winners__user-pic" data-lazy="/assets/img/users/user2.jpg" alt="Eric Chan Chong Avatar">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -5274,7 +5694,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="winners__user-pic" data-lazy="/assets/img/users/user3.jpg" alt="Mike Lee Avatar">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -5439,7 +5873,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="winners__user-pic" data-lazy="/assets/img/users/user4.jpg" alt="Sasha Gray Avatar">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -5596,7 +6044,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="winners__user-pic" data-lazy="/assets/img/users/user1.png" alt="Bacon Titties Avatar">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -5761,7 +6223,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="winners__user-pic" data-lazy="/assets/img/users/user2.jpg" alt="Eric Chan Chong Avatar">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -5926,7 +6402,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="winners__user-pic" data-lazy="/assets/img/users/user3.jpg" alt="Mike Lee Avatar">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -6277,7 +6767,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="choose-gift__img" src="/assets/img/gifts/gift01.png" alt="Gift $ 1 500 bonus">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -6441,7 +6945,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="choose-gift__img" src="/assets/img/gifts/gift02.png" alt="Gift 15 gift spins">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -6605,7 +7123,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="choose-gift__img" src="/assets/img/gifts/gift03.png" alt="Gift 200 compoints">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -6993,7 +7525,7 @@
         
         <div><a href="/gamehall/" class="a selected">Gamehall</a></div>
         
-        <div><a href="/single-01/" class="a ">Text Page Example</a></div>
+        <div><a href="/single-01/" class="a ">Старт лотереи «Викенд в Вегасе»</a></div>
         
         <br>
         <div><span style="color: #fff;">Popups:</span></div>

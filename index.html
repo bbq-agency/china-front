@@ -21,13 +21,15 @@
 
     <nav class="header__nav">
         <a class="header__nav-link js-nav-primary" href="#">
-            <span class="icon-gamburger"></span>
+            <span class="icon-hamburger"></span>
             <div class="header__nav-item">Menu</div>
         </a>
-<!--         <a class="header__nav-link" href="#">
+        
+        <a class="header__nav-link" href="#">
             <span class="icon-dashboard"></span>
             <div class="header__nav-item">Dashboard</div>
-        </a> -->
+        </a>
+        
         <a class="header__nav-link" href="/gamehall/">
             <span class="icon-all-games"></span>
             <div class="header__nav-item">All Games</div>
@@ -53,16 +55,14 @@
                     <span class="header__user-balance">$3 994 432</span>
                 </div>
                 <div class="header__contlols">
-                    <a href="#" class="header__contlols-btn"><i class="icon icon-star-bordered"></i></a>
-                    <a href="#" class="header__contlols-btn"><i class="icon icon-notifications"></i></a>
+                    <a href="#" class="header__contlols-btn">
+                        <span class="icon-notifications"></span>
+                    </a>
                     <a href="#" class="header__contlols-help">
-                        <i class="icon icon-headset"></i>
-                        <span>Support</span>
+                        <span class="icon-headset"></span>
+                        <div>Support</div>
                     </a>
-                    <a href="#" class="header__contlols-deposit">
-                        <span class="icon-close"></span>
-                        <span>Deposit</span>
-                    </a>
+                    <a href="#" class="header__contlols-deposit">Deposit</a>
                 </div>
             </div>
         
@@ -302,6 +302,20 @@
     
         
     
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
 
 </div>
 
@@ -344,7 +358,7 @@
 
 <div class="game-filter">
     <div class="game-filter__container">
-        <ul class="game-filter__list js-slick-filter">
+        <ul class="game-filter__list js-slick-filter js-game-filter-list">
             <li class="game-filter__item">
                 <a href="javascript:void(0)" class="game-filter__link">
                     <span class="icon-flag"></span>
@@ -377,15 +391,15 @@
             </li>
             <li class="game-filter__item">
                 <a href="javascript:void(0)" class="game-filter__link">
-                    <span class="icon-roulette"></span>
+                    <span class="icon-favorites"></span>
                     <div class="game-filter__item-title">Favoritess</div>
                 </a>
             </li>
         </ul>
-        <div class="game-filter__btn">
+        <div class="game-filter__btn js-game-filter-btn">
             <i class="icon icon-all-games"></i>
         </div>
-        <form class="game-filter__search" action="">
+        <form class="game-filter__search js-game-filter-search" action="">
             <div class="game-filter__input-wrapper js-search">
                 <span class="icon-search"></span>
                 <input class="game-filter__input" type="text" placeholder="Live">
@@ -442,6 +456,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -597,9 +619,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">The Incredible Hulk</div>
-            <a href="/games/the-incredible-hulk/" class="game-list__item-btn">Play</a>
+            <a href="/games/the-incredible-hulk/" class="game-list__btn-primary">Play</a>
+            <a href="/games/the-incredible-hulk/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -607,6 +637,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -762,9 +800,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">Safari Heat</div>
-            <a href="/games/safari-heat/" class="game-list__item-btn">Play</a>
+            <a href="/games/safari-heat/" class="game-list__btn-primary">Play</a>
+            <a href="/games/safari-heat/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -772,6 +818,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -927,9 +981,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">Royal Treasures</div>
-            <a href="/games/royal-treasures/" class="game-list__item-btn">Play</a>
+            <a href="/games/royal-treasures/" class="game-list__btn-primary">Play</a>
+            <a href="/games/royal-treasures/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -937,6 +999,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -1092,9 +1162,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">Pharaons Gold 3</div>
-            <a href="/games/pharaons-gold-3/" class="game-list__item-btn">Play</a>
+            <a href="/games/pharaons-gold-3/" class="game-list__btn-primary">Play</a>
+            <a href="/games/pharaons-gold-3/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -1102,6 +1180,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -1257,9 +1343,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">Lucky Lady's Charm</div>
-            <a href="/games/lucky-ladys-charm/" class="game-list__item-btn">Play</a>
+            <a href="/games/lucky-ladys-charm/" class="game-list__btn-primary">Play</a>
+            <a href="/games/lucky-ladys-charm/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -1267,6 +1361,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -1422,9 +1524,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">King of cards</div>
-            <a href="/games/king-of-cards/" class="game-list__item-btn">Play</a>
+            <a href="/games/king-of-cards/" class="game-list__btn-primary">Play</a>
+            <a href="/games/king-of-cards/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -1432,6 +1542,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -1587,9 +1705,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">King Kong</div>
-            <a href="/games/king-kong/" class="game-list__item-btn">Play</a>
+            <a href="/games/king-kong/" class="game-list__btn-primary">Play</a>
+            <a href="/games/king-kong/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -1597,6 +1723,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -1752,9 +1886,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">Iron Man</div>
-            <a href="/games/iron-man/" class="game-list__item-btn">Play</a>
+            <a href="/games/iron-man/" class="game-list__btn-primary">Play</a>
+            <a href="/games/iron-man/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -1762,6 +1904,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -1917,9 +2067,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">Gonzos Quest</div>
-            <a href="/games/gonzos-quest/" class="game-list__item-btn">Play</a>
+            <a href="/games/gonzos-quest/" class="game-list__btn-primary">Play</a>
+            <a href="/games/gonzos-quest/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -1927,6 +2085,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -2082,9 +2248,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">Golden Planet</div>
-            <a href="/games/golden-planet/" class="game-list__item-btn">Play</a>
+            <a href="/games/golden-planet/" class="game-list__btn-primary">Play</a>
+            <a href="/games/golden-planet/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -2092,6 +2266,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -2247,9 +2429,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">Fruit Cocktail</div>
-            <a href="/games/fruit-cocktail/" class="game-list__item-btn">Play</a>
+            <a href="/games/fruit-cocktail/" class="game-list__btn-primary">Play</a>
+            <a href="/games/fruit-cocktail/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -2257,6 +2447,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -2412,9 +2610,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">Eastern Delights</div>
-            <a href="/games/eastern-delights/" class="game-list__item-btn">Play</a>
+            <a href="/games/eastern-delights/" class="game-list__btn-primary">Play</a>
+            <a href="/games/eastern-delights/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -2422,6 +2628,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -2577,9 +2791,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">Dolphin's Pearl</div>
-            <a href="/games/dolphins-pearl/" class="game-list__item-btn">Play</a>
+            <a href="/games/dolphins-pearl/" class="game-list__btn-primary">Play</a>
+            <a href="/games/dolphins-pearl/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -2587,6 +2809,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -2742,9 +2972,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">Diamond Trio</div>
-            <a href="/games/diamond-trio/" class="game-list__item-btn">Play</a>
+            <a href="/games/diamond-trio/" class="game-list__btn-primary">Play</a>
+            <a href="/games/diamond-trio/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -2752,6 +2990,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -2907,9 +3153,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">Crazy Monkey</div>
-            <a href="/games/crazy-monkey/" class="game-list__item-btn">Play</a>
+            <a href="/games/crazy-monkey/" class="game-list__btn-primary">Play</a>
+            <a href="/games/crazy-monkey/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -2985,6 +3239,14 @@
             
         
             
+        
+            
+        
+            
+        
+            
+        
+            
                 <img class="game-list__item-img" src="/assets/img/games/king-kong.jpeg" alt="King Kong Cover">
             
         
@@ -3080,9 +3342,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">King Kong</div>
-            <a href="/games/king-kong/" class="game-list__item-btn">Play</a>
+            <a href="/games/king-kong/" class="game-list__btn-primary">Play</a>
+            <a href="/games/king-kong/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -3090,6 +3360,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -3245,9 +3523,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">Iron Man</div>
-            <a href="/games/iron-man/" class="game-list__item-btn">Play</a>
+            <a href="/games/iron-man/" class="game-list__btn-primary">Play</a>
+            <a href="/games/iron-man/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -3255,6 +3541,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -3410,9 +3704,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">Gonzos Quest</div>
-            <a href="/games/gonzos-quest/" class="game-list__item-btn">Play</a>
+            <a href="/games/gonzos-quest/" class="game-list__btn-primary">Play</a>
+            <a href="/games/gonzos-quest/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -3428,6 +3730,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -3583,9 +3893,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">Golden Planet</div>
-            <a href="/games/golden-planet/" class="game-list__item-btn">Play</a>
+            <a href="/games/golden-planet/" class="game-list__btn-primary">Play</a>
+            <a href="/games/golden-planet/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -3593,6 +3911,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -3748,9 +4074,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">Fruit Cocktail</div>
-            <a href="/games/fruit-cocktail/" class="game-list__item-btn">Play</a>
+            <a href="/games/fruit-cocktail/" class="game-list__btn-primary">Play</a>
+            <a href="/games/fruit-cocktail/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -3758,6 +4092,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -3913,9 +4255,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">Eastern Delights</div>
-            <a href="/games/eastern-delights/" class="game-list__item-btn">Play</a>
+            <a href="/games/eastern-delights/" class="game-list__btn-primary">Play</a>
+            <a href="/games/eastern-delights/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -3923,6 +4273,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -4078,9 +4436,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">Dolphin's Pearl</div>
-            <a href="/games/dolphins-pearl/" class="game-list__item-btn">Play</a>
+            <a href="/games/dolphins-pearl/" class="game-list__btn-primary">Play</a>
+            <a href="/games/dolphins-pearl/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -4088,6 +4454,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -4243,9 +4617,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">Diamond Trio</div>
-            <a href="/games/diamond-trio/" class="game-list__item-btn">Play</a>
+            <a href="/games/diamond-trio/" class="game-list__btn-primary">Play</a>
+            <a href="/games/diamond-trio/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -4253,6 +4635,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -4408,9 +4798,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">Crazy Monkey</div>
-            <a href="/games/crazy-monkey/" class="game-list__item-btn">Play</a>
+            <a href="/games/crazy-monkey/" class="game-list__btn-primary">Play</a>
+            <a href="/games/crazy-monkey/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -4418,6 +4816,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -4573,9 +4979,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">Crazy Fruit</div>
-            <a href="/games/crazy-fruit/" class="game-list__item-btn">Play</a>
+            <a href="/games/crazy-fruit/" class="game-list__btn-primary">Play</a>
+            <a href="/games/crazy-fruit/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -4583,6 +4997,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -4738,9 +5160,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">Book Of Ra</div>
-            <a href="/games/book-of-ra/" class="game-list__item-btn">Play</a>
+            <a href="/games/book-of-ra/" class="game-list__btn-primary">Play</a>
+            <a href="/games/book-of-ra/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -4748,6 +5178,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -4903,9 +5341,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">Always Hot</div>
-            <a href="/games/always-hot/" class="game-list__item-btn">Play</a>
+            <a href="/games/always-hot/" class="game-list__btn-primary">Play</a>
+            <a href="/games/always-hot/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -4921,6 +5367,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -5076,9 +5530,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">Pharaons Gold 3</div>
-            <a href="/games/pharaons-gold-3/" class="game-list__item-btn">Play</a>
+            <a href="/games/pharaons-gold-3/" class="game-list__btn-primary">Play</a>
+            <a href="/games/pharaons-gold-3/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -5086,6 +5548,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -5241,9 +5711,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">Lucky Lady's Charm</div>
-            <a href="/games/lucky-ladys-charm/" class="game-list__item-btn">Play</a>
+            <a href="/games/lucky-ladys-charm/" class="game-list__btn-primary">Play</a>
+            <a href="/games/lucky-ladys-charm/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -5251,6 +5729,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -5406,9 +5892,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">King of cards</div>
-            <a href="/games/king-of-cards/" class="game-list__item-btn">Play</a>
+            <a href="/games/king-of-cards/" class="game-list__btn-primary">Play</a>
+            <a href="/games/king-of-cards/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -5424,6 +5918,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -5579,9 +6081,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">The Incredible Hulk</div>
-            <a href="/games/the-incredible-hulk/" class="game-list__item-btn">Play</a>
+            <a href="/games/the-incredible-hulk/" class="game-list__btn-primary">Play</a>
+            <a href="/games/the-incredible-hulk/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -5589,6 +6099,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -5744,9 +6262,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">Safari Heat</div>
-            <a href="/games/safari-heat/" class="game-list__item-btn">Play</a>
+            <a href="/games/safari-heat/" class="game-list__btn-primary">Play</a>
+            <a href="/games/safari-heat/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -5754,6 +6280,14 @@
                 
                     <div class="game-list__item">
     <div class="game-list__item-wrap">
+        
+            
+        
+            
+        
+            
+        
+            
         
             
         
@@ -5909,9 +6443,17 @@
         
             
         
+            
+        
+            
+        
+            
+        
+        <span class="icon-favorites"></span>
         <div class="game-list__item-text">
             <div class="game-list__item-title">Royal Treasures</div>
-            <a href="/games/royal-treasures/" class="game-list__item-btn">Play</a>
+            <a href="/games/royal-treasures/" class="game-list__btn-primary">Play</a>
+            <a href="/games/royal-treasures/" class="game-list__btn-ghost">Demo</a>
         </div>
     </div>
 </div>
@@ -6003,7 +6545,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/the-incredible-hulk.jpeg" alt="The Incredible Hulk Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -6165,7 +6721,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/safari-heat.png" alt="Safari Heat Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -6327,7 +6897,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/royal-treasures.jpg" alt="Royal Treasures Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -6489,7 +7073,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/pharaons-gold-3.png" alt="Pharaons Gold 3 Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -6651,7 +7249,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/lucky-ladys-charm.jpeg" alt="Lucky Lady's Charm Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -6813,7 +7425,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/king-of-cards.jpg" alt="King of cards Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -6975,7 +7601,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/king-kong.jpeg" alt="King Kong Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -7137,7 +7777,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/iron-man.jpeg" alt="Iron Man Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -7299,7 +7953,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="game-hall__item-img" src="/assets/img/games/gonzos-quest.jpeg" alt="Gonzos Quest Cover">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -7540,7 +8208,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="winners__user-pic" data-lazy="/assets/img/users/user1.png" alt="Bacon Titties Avatar">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -7705,7 +8387,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="winners__user-pic" data-lazy="/assets/img/users/user2.jpg" alt="Eric Chan Chong Avatar">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -7870,7 +8566,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="winners__user-pic" data-lazy="/assets/img/users/user3.jpg" alt="Mike Lee Avatar">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -8035,7 +8745,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="winners__user-pic" data-lazy="/assets/img/users/user4.jpg" alt="Sasha Gray Avatar">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -8192,7 +8916,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="winners__user-pic" data-lazy="/assets/img/users/user1.png" alt="Bacon Titties Avatar">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -8357,7 +9095,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="winners__user-pic" data-lazy="/assets/img/users/user2.jpg" alt="Eric Chan Chong Avatar">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -8522,7 +9274,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="winners__user-pic" data-lazy="/assets/img/users/user3.jpg" alt="Mike Lee Avatar">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -8873,7 +9639,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="choose-gift__img" src="/assets/img/gifts/gift01.png" alt="Gift $ 1 500 bonus">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -9037,7 +9817,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="choose-gift__img" src="/assets/img/gifts/gift02.png" alt="Gift 15 gift spins">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -9201,7 +9995,21 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             <img class="choose-gift__img" src="/assets/img/gifts/gift03.png" alt="Gift 200 compoints">
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -9589,7 +10397,7 @@
         
         <div><a href="/gamehall/" class="a ">Gamehall</a></div>
         
-        <div><a href="/single-01/" class="a ">Text Page Example</a></div>
+        <div><a href="/single-01/" class="a ">Старт лотереи «Викенд в Вегасе»</a></div>
         
         <br>
         <div><span style="color: #fff;">Popups:</span></div>
