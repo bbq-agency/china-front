@@ -1,38 +1,32 @@
 $(document).ready(function() {
+	var gameSearch = $('.js-search'),
+		gameFilterList = $('.js-game-filter-list'),
+		gameFilterSearch = $('.js-game-filter-search'),
+		gameFilterBtn = $('.js-game-filter-btn'),
+		gamesArray = gameSearch.add(gameFilterList).add(gameFilterSearch).add(gameFilterBtn),
+		isAnimated = 'is-animated';
 
-	function searchAnimate() {
-
-		$(".js-search").on('click', function(event) {
+	function searchAnimation() {
+		gameSearch.on('click', function(event) {
 			if (window.innerWidth < 754) {
-		        $(this).addClass('is-animated');
-		        $('.game-filter__list').addClass('is-animated');
-		        $('.game-filter__search').addClass('is-animated');
-		        $('.game-filter__btn').addClass('is-animated');
+		        gamesArray.addClass(isAnimated);
 		        event.preventDefault();
-	        } 
-
-	        $(document).mouseup(function (e) {
-		        var container = $(".js-search");
-
-		        if (!container.is(e.target) && container.has(e.target).length === 0 && container.hasClass('is-animated')) {
-		        	$('.js-search').toggleClass('is-animated');
-			        $('.game-filter__list').toggleClass('is-animated');
-			        $('.game-filter__search').toggleClass('is-animated');
-			        $('.game-filter__btn').toggleClass('is-animated');
-		        }
-		    });
-
-	        return false;
+	        }
 	    });
 
+	    $(document).mouseup(function (event) {
+	        if (!gameSearch.is(event.target) && gameSearch.has(event.target).length === 0 && gameSearch.hasClass(isAnimated)) {
+	        	gamesArray.toggleClass(isAnimated);
+	        }
+	    });
 	};
 
-    searchAnimate();
+	searchAnimation();
 
-});
+	$(window).resize(function() {
+		if (gameSearch.hasClass(isAnimated)) {
+			gamesArray.removeClass(isAnimated);
+		}
+	});
 
-$( window ).resize(function() {
-	$(this).removeClass('is-animated');
-    $('.game-filter__list').removeClass('is-animated');
-	$('.game-filter__search').removeClass('is-animated');
 });

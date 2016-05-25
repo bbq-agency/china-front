@@ -60,6 +60,8 @@ $(document).ready(function () {
         infinite: false,
         mobileFirst: true,
         variableWidth: true,
+        nextArrow: '<div class="slick-next-shadow"></div><button type="button" class="slick-next icon-arrowright">Next</button>',
+        prevArrow: '<div class="slick-prev-shadow"></div><button type="button" class="slick-prev icon-arrowleft">Previous</button>',
         responsive: [
             {
                 breakpoint: 320,
@@ -68,10 +70,10 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 1300,
+                breakpoint: 754,
                 settings: {
                     variableWidth: true,
-                    slidesToShow: 7
+                    slidesToShow: 6
                 }
             }
         ]
@@ -88,6 +90,8 @@ $(document).ready(function () {
         lazyLoad: 'progressive',
         autoplay: true,
         autoplaySpeed: 3500,
+        nextArrow: '<div class="slick-next-shadow"></div><button type="button" class="slick-next icon-arrowright">Next</button>',
+        prevArrow: '<div class="slick-prev-shadow"></div><button type="button" class="slick-prev icon-arrowleft">Previous</button>',
         responsive: [
             {
                 breakpoint: 322,
