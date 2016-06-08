@@ -26,10 +26,22 @@
         {% if i.win %}
             <div class="promo-mili-win">{{ i.win }} миль</div>
         {% else %}
-            <div class="promo-mili__5-star">{{ i.5-star }} миль</div>
-            <div class="promo-mili__4-star">{{ i.4-star }} миль</div>
+            <div class="promo-mili__count">
+                <span class="promo-mili__5-star">- {{ i.5-star }} миль</span>
+                <span class="icon-mili-star">5</span>
+                <span class="icon-mili-airplane"></span>
+            </div>
+            <div class="promo-mili__count">
+                <span class="promo-mili__4-star">- {{ i.4-star }} миль</span>
+                <span class="icon-mili-star">4</span>
+                <span class="icon-mili-airplane"></span>
+            </div>
             {% if i.3-star %}
-                <div class="promo-mili__3-star">{{ i.3-star }} миль</div>
+                <div class="promo-mili__count">
+                    <span class="promo-mili__3-star">- {{ i.3-star }} миль</span>
+                    <span class="icon-mili-star">3</span>
+                    <span class="icon-mili-airplane"></span>
+                </div>
             {% endif %}
         {% endif %}
 

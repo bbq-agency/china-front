@@ -170,4 +170,26 @@
             transform: translate3d(-50%,0,0);
         }
     }
+
+    &__count {
+        color: #003399;
+        text-transform: uppercase;
+        position: relative;
+        // display: table;
+        width: 140px;
+        margin: 0 auto;
+
+        [class^="icon-"] {
+            position: absolute;
+            top: 0;
+        }
+
+        .icon-mili-star {
+            left: 0;
+        }
+
+        .icon-mili-airplane {
+            right: 0;
+        }
+    }
 }
