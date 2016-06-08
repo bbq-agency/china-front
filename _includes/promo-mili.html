@@ -3,7 +3,15 @@
     <h1>Hello Promo Mili</h1>
 
     {% for i in site.data.promo-mili %}
+    <div>
         <div class="promo-mili__city">{{ i.city }}</div>
+        
+        {% for cover in site.static_files %}
+        	{% if cover.path contains i.id and cover.path contains 'promo-mili' %}
+                <img class="promo-mili__img" src="{{ site.baseurl }}{{ cover.path }}" alt="{{ i.title }} Cover">
+            {% endif %}
+    	{% endfor %}
+    	</div>
     {% endfor %}
 
     <div>
