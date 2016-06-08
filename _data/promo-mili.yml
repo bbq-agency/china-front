@@ -6,6 +6,7 @@
 }
 - {
     id: "item-02",
+    class: "promo-mili__item--primary",
     city : "Кругосветное путешествие",
     win : 200 000, 
 }
