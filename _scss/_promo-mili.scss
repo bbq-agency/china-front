@@ -74,19 +74,19 @@
         // background: #004083;
         // background: linear-gradient(45deg, #004185 0%,#0082de 35%,#004184 100%);
         background: linear-gradient(to right, #004185 0%,#0082de 39%,#004184 100%);
-        padding: 14px 12px;
+        padding: 14px 16px;
         text-shadow: 1px 1px 1px #0694fc;
         position: relative;
 
-        &:before,
-        &:after {
-            content: '';
-            border-top: 2px dashed rgba(#fff,.05);
-            position: absolute;
-            z-index: 25;
-            left: 0;
-            right: 0;
-        }
+        // &:before,
+        // &:after {
+        //     content: '';
+        //     border-top: 2px dashed rgba(#fff,.05);
+        //     position: absolute;
+        //     z-index: 25;
+        //     left: 0;
+        //     right: 0;
+        // }
         &:before {
             top: 8px;
         }
