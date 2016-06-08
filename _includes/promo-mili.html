@@ -2,7 +2,14 @@
 
     {% for i in site.data.promo-mili %}
     <div class="promo-mili__item {{ i.class }}">
-        <div class="promo-mili__city">{{ i.city }}</div>
+        <div class="promo-mili__ribbon">
+            <div class="promo-mili__ribbon-shadow">
+                <div class="promo-mili__city">
+                    {{ i.city }}
+                </div>
+            </div>
+        </div>
+        
 
         {% for cover in site.static_files %}
             {% if cover.path contains i.id and cover.path contains 'promo-mili' %}
