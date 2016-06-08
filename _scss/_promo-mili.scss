@@ -1,6 +1,12 @@
 .promo-mili {
     text-align: center;
+    padding: 50px 0;
     
+    &__caption {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
     &__list {
         @include clearfix;
     }
@@ -9,6 +15,7 @@
         float: left;
         width: 390px;
         height: 530px;
+        margin-bottom: 20px;
     }
 
     &__ribbon {
@@ -22,42 +29,59 @@
         &:after {
             content: '';
             position: absolute;
-            border: 27px solid #004989;
+            border: 20px solid #004989;
             z-index: 10;
             bottom: -12px;
+
+            .promo-mili__item--primary & {
+                border-width: 27px;
+                border-color: #cc283a;
+            }
         }
 
         &:before {
             left: -35px;
-            border-right-width: 45px;
-            border-left-color: transparent;
-            border-left-width: 12px;
+            border-right-width: 45px !important;
+            border-left-color: transparent !important;
+            border-left-width: 12px !important;
             box-shadow: 2px 1px 1px rgba(#000,.3);
+
+            .promo-mili__item--primary & {
+                border-right-width: 65px;
+            }
         }
 
         &:after {
             right: -35px;
-            border-left-width: 45px;
-            border-right-color: transparent;
-            border-right-width: 12px;
+            border-left-width: 45px !important;
+            border-right-color: transparent !important;
+            border-right-width: 12px !important;
             box-shadow: -2px 1px 1px rgba(#000,.3);
         }
 
         &-shadow {
+
             &:before,
             &:after {
                 content: '';
-                border-color: #003764 transparent transparent transparent;
+                border-color: transparent;
+                border-top-color: #003764;
                 position: absolute;
                 display: block;
                 border-style: solid;
                 bottom: -12px;
                 z-index: 15;
+
+                .promo-mili__item--primary & {
+                    border-top-color: #960715;
+                }
             }
+
             &:before {
                 left: 0;
                 border-width: 12px 0 0 22px;
             }
+
             &:after {
                 right: 0;
                 border-width: 12px 22px 0 0;
@@ -67,16 +91,23 @@
 
     &__city {
         font-size: 22px;
-        line-height: 1.2;
+        line-height: 30px;
         text-transform: uppercase;
         position: relative;
         z-index: 20;
         // background: #004083;
         // background: linear-gradient(45deg, #004185 0%,#0082de 35%,#004184 100%);
         background: linear-gradient(to right, #004185 0%,#0082de 39%,#004184 100%);
-        padding: 14px 12px;
-        text-shadow: 1px 1px 1px #0694fc;
+        padding: 5px 14px;
+        text-shadow: 1px 1px 1px rgba(#fff,.4);
         position: relative;
+        box-shadow: 2px 1px 1px rgba(#000,.3);
+
+        .promo-mili__item--primary & {
+            font-size: 24px;
+            padding: 12px 14px;
+            background: linear-gradient(to right, #b30d1f 0%,#cc283a 79%,#b40e20 100%);
+        }
 
         &:before,
         &:after {
@@ -87,11 +118,13 @@
             left: 0;
             right: 0;
         }
+
         &:before {
-            top: 8px;
+            top: 4px;
         }
+
         &:after {
-            bottom: 8px;
+            bottom: 4px;
         }
     }
 }
