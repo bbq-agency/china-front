@@ -6,4 +6,24 @@
         <div class="promo-mili__city">{{ i.city }}</div>
     {% endfor %}
 
+    <div>
+        <div class="ribbon">
+            <div class="ribbon-stitches-top"></div>
+            <strong class="ribbon-content">
+                <h1>A Pure CSS Ribbon</h1>
+            </strong>
+            <div class="ribbon-stitches-bottom"></div>
+        </div>
+    </div>
+
+    {% for i in site.data.promo-mili %}
+        <div>
+            <div class="promo-mili__ribbon">
+                <div class="promo-mili__city">
+                    {{ i.city }}
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
 </div>
