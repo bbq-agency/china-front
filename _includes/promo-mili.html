@@ -17,7 +17,9 @@
 
         {% for cover in site.static_files %}
             {% if cover.path contains i.id and cover.path contains 'promo-mili' %}
-                <img class="promo-mili__img" src="{{ site.baseurl }}{{ cover.path }}" alt="">
+                <div class="promo-mili__media">
+                    <img class="promo-mili__img" src="{{ site.baseurl }}{{ cover.path }}" alt="">
+                </div>
             {% endif %}
         {% endfor %}
 

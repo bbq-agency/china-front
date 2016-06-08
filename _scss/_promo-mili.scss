@@ -1,6 +1,7 @@
 .promo-mili {
     text-align: center;
     padding: 50px 0;
+    overflow: hidden;
 
     &__caption {
         font-size: 24px;
@@ -138,11 +139,28 @@
         }
     }
 
+    &__media {
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            background: url(../img/promo-mili/shadow.png);
+            width: 567px;
+            height: 275px;
+            bottom: -60px;
+            left: 20px;
+            z-index: 30;
+        }
+    }
+
     &__img {
         display: block;
         margin: 0 auto 10px;
         max-width: 100%;
         height: auto;
+        position: relative;
+        z-index: 35;
 
         .promo-mili__item--primary & {
             margin-top: -50px;
