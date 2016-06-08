@@ -1,6 +1,7 @@
 <div class="promo-mili">
 
-    <div class="promo-mili__list">
+<div class="promo-mili__list">
+
     {% for i in site.data.promo-mili %}
     <div class="promo-mili__item {{ i.class }}">
         <div class="promo-mili__ribbon">
@@ -30,7 +31,8 @@
 
         </div>
     {% endfor %}
-    </div>
+
+</div>
 
     <div class="promo-mili__list">
         {% for i in site.data.promo-mili %}
@@ -38,10 +40,12 @@
                 <div class="promo-mili__ribbon">
                     <div class="promo-mili__ribbon-shadow">
                         <div class="promo-mili__city">
-                            {{ i.city }}
+                            {{ i.city }} 
                         </div>
                     </div>
                 </div>
+                <h1><span class="icon-mili-star"></span></h1>
+                <h1><span class="icon-mili-airplane"></span></h1>
             </div>
         {% endfor %}
     </div>
