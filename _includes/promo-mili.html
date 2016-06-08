@@ -1,3 +1,9 @@
 <div class="promo-mili">
+
     <h1>Hello Promo Mili</h1>
+
+    {% for i in site.data.promo-mili %}
+        <div class="promo-mili__city">{{ i.city }}</div>
+    {% endfor %}
+
 </div>
