@@ -1,6 +1,15 @@
 .promo-mili {
     text-align: center;
     
+    &__list {
+        @include clearfix;
+    }
+
+    &__item {
+        float: left;
+        width: 33.33333%;
+    }
+
     &__ribbon {
         color: #fff;
         display: inline-block;
