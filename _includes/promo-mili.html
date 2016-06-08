@@ -5,13 +5,24 @@
     {% for i in site.data.promo-mili %}
     <div>
         <div class="promo-mili__city">{{ i.city }}</div>
-        
+
         {% for cover in site.static_files %}
-        	{% if cover.path contains i.id and cover.path contains 'promo-mili' %}
+            {% if cover.path contains i.id and cover.path contains 'promo-mili' %}
                 <img class="promo-mili__img" src="{{ site.baseurl }}{{ cover.path }}" alt="{{ i.title }} Cover">
             {% endif %}
-    	{% endfor %}
-    	</div>
+        {% endfor %}
+
+        {% if i.win %}
+            <div class="promo-mili-win">{{ i.win }} миль</div>
+        {% else %}
+            <div class="promo-mili__5-star">{{ i.5-star }} миль</div>
+            <div class="promo-mili__4-star">{{ i.4-star }} миль</div>
+            {% if i.3-star %}
+                <div class="promo-mili__3-star">{{ i.3-star }} миль</div>
+            {% endif %}
+        {% endif %}
+
+        </div>
     {% endfor %}
 
     <div>
