@@ -1,6 +1,6 @@
-# Nebo
+# Promo Mili
 
-Web development of 'Mili' Promo
+Web development of Promo Mili
 
 ### Run
 
