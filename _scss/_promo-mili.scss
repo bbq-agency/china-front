@@ -1,10 +1,10 @@
 .promo-mili {
     text-align: center;
     padding: 50px 0;
-    
+
     &__caption {
         font-size: 24px;
-        margin-bottom: 40px;
+        margin-bottom: 90px;
     }
 
     &__list {
@@ -15,7 +15,13 @@
         float: left;
         width: 390px;
         height: 530px;
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
+        padding-top: 40px;
+
+        &--primary {
+            padding-top: 0;
+            // top: -50px;
+        }
     }
 
     &__ribbon {
@@ -24,6 +30,10 @@
         margin: 0 auto 16px;
         min-width: 160px;
         position: relative;
+
+        .promo-mili__item--primary & {
+            // top: -50px;
+        }
 
         &:before,
         &:after {
@@ -125,6 +135,21 @@
 
         &:after {
             bottom: 4px;
+        }
+    }
+
+    &__img {
+        display: block;
+        margin: 0 auto 10px;
+        max-width: 100%;
+        height: auto;
+
+        .promo-mili__item--primary & {
+            margin-top: -50px;
+            max-width: inherit;
+            position: relative;
+            left: 50%;
+            transform: translate3d(-50%,0,0);
         }
     }
 }
