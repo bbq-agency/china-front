@@ -1,7 +1,5 @@
 <div class="promo-mili">
 
-    <h1>Hello Promo Mili</h1>
-
     {% for i in site.data.promo-mili %}
     <div class="promo-mili__item {{ i.class }}">
         <div class="promo-mili__city">{{ i.city }}</div>
@@ -24,16 +22,6 @@
 
         </div>
     {% endfor %}
-
-    <div>
-        <div class="ribbon">
-            <div class="ribbon-stitches-top"></div>
-            <strong class="ribbon-content">
-                <h1>A Pure CSS Ribbon</h1>
-            </strong>
-            <div class="ribbon-stitches-bottom"></div>
-        </div>
-    </div>
 
     <div class="promo-mili__list">
         {% for i in site.data.promo-mili %}
