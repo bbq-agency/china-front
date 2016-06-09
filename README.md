@@ -1,6 +1,6 @@
 # Promo Mili
 
-Web development of Promo Mili
+Front-end development of Promo Mili
 
 ### Run
 
