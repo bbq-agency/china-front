@@ -5,7 +5,10 @@
 
     &__caption {
         font-size: 24px;
-        margin-bottom: 90px;
+        margin-bottom: 40px;
+        font-family: Arial, sans-serif;
+        text-transform: uppercase;
+        color: #062346;
     }
 
     &__list {
@@ -16,7 +19,7 @@
         float: left;
         width: 390px;
         height: 530px;
-        // margin-bottom: 20px;
+        margin-bottom: 40px;
         padding-top: 40px;
 
         &--primary {
@@ -31,6 +34,7 @@
         margin: 0 auto 16px;
         min-width: 160px;
         position: relative;
+        z-index: 40;
 
         .promo-mili__item--primary & {
             // top: -50px;
@@ -141,6 +145,11 @@
 
     &__media {
         position: relative;
+        margin-bottom: -40px;
+
+        .promo-mili__item--primary & {
+            margin-bottom: 0;
+        }
 
         &:before {
             content: '';
@@ -148,48 +157,95 @@
             background: url(../img/promo-mili/shadow.png);
             width: 567px;
             height: 275px;
-            bottom: -60px;
+            bottom: -4px;
             left: 20px;
             z-index: 30;
+
+            .promo-mili__item--primary & {
+                bottom: -54px;
+            }
         }
     }
 
     &__img {
         display: block;
-        margin: 0 auto 10px;
-        max-width: 100%;
+        margin: 0 auto;
+        width: 450px;
         height: auto;
         position: relative;
         z-index: 35;
+        margin-top: -60px;
+        max-width: inherit;
+        position: relative;
+        left: 50%;
+        transform: translate3d(-50%,0,0);
+    }
 
-        .promo-mili__item--primary & {
-            margin-top: -50px;
-            max-width: inherit;
-            position: relative;
-            left: 50%;
-            transform: translate3d(-50%,0,0);
-        }
+    &__row {
+        width: 100%;
     }
 
     &__count {
-        color: #003399;
+        display: inline-block;
+        color: #004388;
         text-transform: uppercase;
         position: relative;
-        // display: table;
-        width: 140px;
+        z-index: 50;
         margin: 0 auto;
+        font-size: 18px;
+        line-height: 40px;
+        font-weight: 700;
 
-        [class^="icon-"] {
-            position: absolute;
-            top: 0;
+        &--win {
+            color: #b50f1c;
+            font-size: 24px;
+        }
+
+        &--5 .icon-mili-star {
+            font-size: 48px;
+            margin-right: 10px;
+        }
+
+        &--4 .icon-mili-star {
+            font-size: 34px;
+            margin-right: 14px;
+        }
+
+        &--3 .icon-mili-star {
+            font-size: 34px;
+            margin-right: 14px;
+        }
+
+        .icon-mili-airplane-left {
+            line-height: 0;
+            vertical-align: middle;
+            font-size: 24px;
+            margin-right: 14px;
+        }
+        .icon-mili-airplane-right {
+            line-height: 0;
+            vertical-align: middle;
+            font-size: 24px;
+            margin-left: 18px;
         }
 
         .icon-mili-star {
-            left: 0;
+            line-height: 0;
+            vertical-align: middle;
+            top: -4px;
+            position: relative;
         }
 
-        .icon-mili-airplane {
-            right: 0;
+        &-number {
+            position: absolute;
+            left: 12px;
+            color: #fff;
+            font-size: 20px;
+            text-shadow: 1px 1px 1px rgba(#fff,.4);
+
+            .promo-mili__count--5 & {
+                left: 20px;
+            }
         }
     }
 }
