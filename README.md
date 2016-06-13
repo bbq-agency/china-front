@@ -6,4 +6,4 @@ Front-end development of Promo Mili
 
 `npm i`
 
-`npm start` or `gulp`
+`gulp`
